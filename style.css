@@ -19,6 +19,7 @@ body {
 
 a {
 	text-decoration: none;
+	color: black;
 }
 
 ul,
@@ -26,7 +27,229 @@ li {
 	list-style: none;
 }
 
+:root {
+	--icon-color: #828282;
+	--flag-background-color: #d8d8d8a9;
+	--cmenu-bg: #eff0f1;
+	--bg-zire-menu: #c4c4c4;
+	--bg-btn-darkhast: #d1a040;
+	--bg-btn: #d1a040;
+	--color-toggel: #828282;
+	--color-li-zirmenu: #080808;
+}
+
 /************************************* end Global Style */
+/************************ START RESPONSIVE MENU */
+
+/* start top menu responsive  */
+.parent-responsive-menu {
+	margin-top: 5px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav-flag {
+	flex-basis: 40%;
+	border-radius: 5px;
+}
+
+.ul-flag {
+	background-color: var(--flag-background-color);
+	border-radius: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	text-align: center;
+}
+.ul-flag li img {
+	width: 30px;
+	transform: translate(-5px, 3px);
+}
+.left-nav-responsive-menu {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	flex-basis: 40%;
+}
+.left-ul-responsive-menu {
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-evenly;
+}
+.left-ul-responsive-menu li i {
+	color: var(--icon-color);
+}
+.left-ul-responsive-menu button {
+	width: 30px;
+	outline: none;
+	border-radius: 5px;
+	border: 1px solid var(--icon-color);
+}
+.ul-flag li:hover .wrapper-flag {
+	display: block;
+}
+.wrapper-flag {
+	display: none;
+}
+/* end top menu responsive  */
+
+/* start responsive menu show with btn */
+
+.parenet-res-menu-with-btn {
+	display: none;
+	position: absolute;
+	left: 0px;
+	width: 60%;
+	margin-top: 20px;
+	z-index: 999;
+}
+
+.nav-res-menu-btn {
+	background: gray;
+}
+
+.ul-res-menu-btn {
+	background-color: var(--cmenu-bg);
+
+	flex-direction: column;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.toggel {
+	color: var(--color-toggel);
+	padding: 15px;
+	margin-right: 15px;
+	font-size: 0.9rem;
+	font-weight: bold;
+}
+
+.toggel a {
+	color: var(--color-toggel);
+}
+
+.ul-wrapper-toggel {
+	display: none;
+	width: 100%;
+	background-color: var(--bg-zire-menu);
+}
+.ul-wrapper-toggel li {
+	border-bottom: 1px solid #eff0f1;
+
+	width: 100%;
+	padding: 10px;
+
+	font-size: 0.9rem;
+}
+
+.ul-wrapper-toggel li a {
+	color: var(--color-li-zirmenu);
+}
+.activeResMenu {
+	display: block;
+}
+
+.showToggel {
+	display: block;
+}
+
+.showIconClose .fa-bars::before {
+	content: '\f00d';
+}
+/* end responsive menu show with btn */
+
+/********************************** END RESPONSIVE MENU */
+
+/**************************************** START SWIPER SECTION */
+.container-swiper {
+	border: 1px solid red;
+}
+
+.swiper {
+	direction: rtl;
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-pagination {
+	/* direction:ltr; */
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.container-swiper_and_btn {
+	transform: translateY(100px);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper-btn-darkhast {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+	transform: translateY(45px);
+}
+.praent-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	padding: 8px;
+	font-size: 0.8rem;
+	font-weight: bold;
+	transform: translateX(-2px);
+	letter-spacing: 2px;
+	background-color: var(--bg-btn-darkhast);
+}
+.praent-btn a {
+	width: 100%;
+	height: 100%;
+}
+
+/**************************************** END SWIPER SECTION */
+
+/****************************************** START PARENT-TEXT_AND_SOCIALMEDIA */
+
+.parent-text_and_socialMedia {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transform: translateY(200px);
+}
+
+.parent-text_and_socialMedia > div > p {
+	font-weight: bold;
+	letter-spacing: 5px;
+}
+.parent-text_and_socialMedia > nav {
+	width: 100%;
+}
+.ul-social-media {
+	display: flex;
+	justify-content: center;
+}
+.ul-social-media li {
+	padding: 0px 12px 0px 12px;
+}
+/****************************************** END PARENT-TEXT_AND_SOCIALMEDIA */
 
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
