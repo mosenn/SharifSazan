@@ -1,0 +1,62 @@
+/************************************* Start Global Style */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: iranL;
+	direction: rtl;
+}
+
+body {
+	font-family: iranL;
+	direction: rtl;
+}
+
+@font-face {
+	font-family: iranL;
+	src: url(Fonts/IRANSansWeb_Light.ttf);
+}
+
+a {
+	text-decoration: none;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+/************************************* end Global Style */
+
+/********************************************** RESPONSIVE SCOPE */
+/* mobile */
+@media screen and (max-width: 576px) {
+}
+
+/* other */
+@media screen and (min-width: 577px) {
+	body {
+		background-color: green;
+	}
+}
+
+/* tablet */
+@media screen and (min-width: 768px) {
+	body {
+		background-color: pink;
+	}
+}
+
+/* desktop */
+@media screen and (min-width: 900px) {
+	body {
+		background-color: gray;
+	}
+}
+
+/* laptop */
+@media screen and (min-width: 1024px) {
+	body {
+		background-color: skyblue;
+	}
+}
