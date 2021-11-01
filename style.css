@@ -415,6 +415,65 @@ li {
 
 /****************************************** END PARENT-TEXT_AND_SOCIALMEDIA */
 
+/*START KHADAMAT PAGE */
+
+.khadamat-main-section{
+	border: solid rebeccapurple;
+width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap:20px;
+	padding: 20px;
+}
+.khadamat-img-section{
+	width: 100%;
+	
+	
+}
+.khadamat-img-section img{
+	width: 100%;
+}
+.khadamat-main-section{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.khadamat-main-section div h4{
+color: #828282;
+	
+}
+.khadamat-main-section article{
+	text-align: justify;
+}
+.khadamat-searchbox-nav{
+	
+}
+.khadamat-wrapper{
+	display: none;
+}
+.khadamat-box-left{
+	display: none;
+}
+
+.showwrapperkhadamat{
+	display: block;
+}
+.khadamat-article-nav{
+	display: flex;
+	flex-direction: row;
+}
+.khadamat-parent-article{
+	flex-direction: column;
+}
+.khadamat-parent-article div{
+	padding-top: 20px;
+}
+/*END KHADAMAT PAGE */
+
+
+
+
+
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -466,6 +525,46 @@ li {
 @media screen and (min-width: 768px) {
 	body {
 		background-color: pink;
+		
+	}
+	
+	.khadamat-box-left{
+	display:flex;
+		flex-direction: column;
+	background-color:#EFF0F1; 
+		position: sticky;
+		top: 20px;
+}
+	.khadamat-toggle{
+		color: #828282;
+		border-width: 30px;
+		padding: 10px;
+		
+	}
+
+	.khadamat-wrapper{
+		color: #757575 ;
+		background-color: #C4C4C4; 
+	}
+	.khadamat-searchbox-nav{
+		
+		width: 100%;
+		border: solid red;
+	}
+	.khadamat-wrapper li{
+		border: solid 1px;
+		width: 100%;
+		border: solid yellow;
+		
+	}
+	.khadamat-wrapper ul{
+		width: 100%;
+		border: solid #0000FF;
+		display: flex;
+	
+	}
+	.khadamat-parent-article{
+		width: 70%;
 	}
 
 	.social-media-swiper {
