@@ -31,11 +31,15 @@ li {
 	--icon-color: #828282;
 	--flag-background-color: #d8d8d8a9;
 	--cmenu-bg: #eff0f1;
-	--bg-zire-menu: #c4c4c4;
+	--bg-zire-menu: #828282;
+	--bg-main-menu: #c4c4c4;
+	--wrapper-main-menu-li-border: #c4c4c4;
 	--bg-btn-darkhast: #d1a040;
 	--bg-btn: #d1a040;
 	--color-toggel: #828282;
 	--color-li-zirmenu: #080808;
+	--li-wrapper-main-menu: #eff0f1;
+	--main-menu-li: #757575;
 }
 
 /************************************* end Global Style */
@@ -49,18 +53,36 @@ li {
 }
 
 .nav-flag {
-	flex-basis: 40%;
+	display: flex;
+	flex-basis: 90px;
 	border-radius: 5px;
 }
-
+.nav-flag-main-menu {
+	width: 90px;
+	border-radius: 5px;
+}
 .ul-flag {
+	width: 100%;
+}
+
+.wrapper-flag-main-menu {
+	display: none;
+}
+
+.ul-flag-main-menu li:hover .wrapper-flag-main-menu {
+	display: block;
+}
+.ul-flag,
+.ul-flag-main-menu {
 	background-color: var(--flag-background-color);
 	border-radius: 5px;
 	display: flex;
 	justify-content: space-evenly;
 	text-align: center;
+	cursor: pointer;
 }
-.ul-flag li img {
+.ul-flag li img,
+.ul-flag-main-menu li img {
 	width: 30px;
 	transform: translate(-5px, 3px);
 }
@@ -160,10 +182,106 @@ li {
 
 /********************************** END RESPONSIVE MENU */
 
-/**************************************** START SWIPER SECTION */
-.container-swiper {
-	border: 1px solid red;
+/* ************************** START  MAIN MENU  */
+.ul-main-menu li i {
+	font-size: 11px;
 }
+.nav-main-menu {
+	flex-basis: 100%;
+	display: flex;
+
+	background-color: var(--bg-main-menu);
+}
+.ul-main-menu {
+	width: 100%;
+	padding: 12px;
+	display: flex;
+	justify-content: space-evenly;
+	height: fit-content;
+}
+.ul-main-menu li a {
+	color: var(--main-menu-li);
+}
+
+.nav-icon-main {
+	display: flex;
+	flex-basis: 10%;
+}
+.ul-icon-main {
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: var(--bg-main-menu);
+
+	display: flex;
+}
+.ul-icon-main li {
+	padding: 15px;
+}
+.ul-icon-main li a {
+	color: var(--main-menu-li);
+}
+.ul-icon-main li {
+	position: relative;
+}
+.wrapper-user-icon {
+	left: 0px;
+
+	z-index: 99;
+
+	position: absolute;
+	display: none;
+}
+
+.wrapper-user-icon li i {
+	color: var(--icon-color);
+}
+.ul-icon-main li:hover a {
+	color: white;
+}
+.ul-icon-main li:hover .wrapper-user-icon {
+	display: block;
+}
+
+.ul-main-menu li a:hover,
+.ul-main-menu li:hover {
+	color: white;
+}
+
+.ul-main-menu li:hover .wrapper-main-menu {
+	display: block;
+}
+.wrapper-main-menu {
+	width: 290px;
+	flex-direction: column;
+	position: absolute;
+	z-index: 999;
+	top: 43px;
+	background-color: var(--bg-zire-menu);
+	display: none;
+}
+.wrapper-main-menu li {
+	padding: 9px;
+	border-bottom: 1px solid var(--wrapper-main-menu-li-border);
+}
+.wrapper-main-menu li a {
+	font-size: 0.9rem;
+	color: var(--li-wrapper-main-menu);
+}
+
+/****************************  END MAIN MENU
+
+
+
+
+
+
+
+
+
+
+
+/**************************************** START SWIPER SECTION */
 
 .swiper {
 	direction: rtl;
@@ -171,8 +289,46 @@ li {
 	height: 100%;
 }
 
-.swiper-pagination {
-	/* direction:ltr; */
+.parenet-swiper-btn {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	width: 40%;
+	transform: translate(0px, 50px);
+}
+
+.parenet-swiper-btn a {
+	transform: translate(200px, 0px);
+	font-weight: bold;
+	font-size: 0.9rem;
+	padding: 8px;
+	border-radius: 10px;
+	background-color: var(--bg-btn-darkhast);
+}
+
+.social-media-swiper {
+	position: absolute;
+	color: white;
+}
+.social-media-swiper {
+	bottom: 0px;
+	display: flex;
+	width: 100%;
+}
+
+.social-media-swiper ul {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.social-media-swiper ul li {
+	color: white;
+	padding: 0px 15px 0px 15px;
+}
+
+.social-media-swiper ul li i {
+	color: white;
 }
 
 .swiper-slide {
@@ -193,19 +349,21 @@ li {
 }
 
 .container-swiper_and_btn {
-	transform: translateY(100px);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 30px;
 }
 .wrapper-btn-darkhast {
 	width: 100%;
 	display: flex;
+
 	justify-content: center;
 	margin-top: 20px;
 	transform: translateY(45px);
 }
+
 .praent-btn {
 	display: flex;
 	justify-content: center;
@@ -218,6 +376,7 @@ li {
 	letter-spacing: 2px;
 	background-color: var(--bg-btn-darkhast);
 }
+
 .praent-btn a {
 	width: 100%;
 	height: 100%;
@@ -232,7 +391,7 @@ li {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: translateY(200px);
+	transform: translateY(101px);
 }
 
 .parent-text_and_socialMedia > div > p {
@@ -249,17 +408,57 @@ li {
 .ul-social-media li {
 	padding: 0px 12px 0px 12px;
 }
+
+.ul-main-menu {
+	display: flex;
+}
+
 /****************************************** END PARENT-TEXT_AND_SOCIALMEDIA */
 
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
+	.social-media-swiper {
+		display: none;
+	}
+	.nav-icon-main {
+		display: none;
+	}
+	.parenet-swiper-btn {
+		display: none;
+	}
+	.social-media-swiper {
+		display: none;
+	}
+	.nav-main-menu {
+		display: none;
+	}
 }
 
 /* other */
 @media screen and (min-width: 577px) {
 	body {
 		background-color: green;
+	}
+	.left-nav-responsive-menu {
+		display: flex;
+	}
+	.nav-main-menu {
+		display: none;
+	}
+	.parenet-swiper-btn {
+		display: none;
+	}
+
+	.social-media-swiper {
+		display: none;
+	}
+	.nav-main-menu {
+		display: none;
+	}
+
+	.nav-icon-main {
+		display: none;
 	}
 }
 
@@ -268,12 +467,45 @@ li {
 	body {
 		background-color: pink;
 	}
+
+	.social-media-swiper {
+		display: flex;
+	}
+	.parenet-swiper-btn {
+		display: flex;
+	}
+	.wrapper-btn-darkhast {
+		display: block;
+	}
+	.wrapper-btn-darkhast {
+		display: none;
+	}
+
+	.parent-text_and_socialMedia {
+		display: none;
+	}
 }
 
 /* desktop */
 @media screen and (min-width: 900px) {
 	body {
 		background-color: gray;
+	}
+
+	.nav-flag {
+		display: none;
+	}
+	.nav-icon-main {
+		display: flex;
+	}
+	.left-nav-responsive-menu {
+		display: none;
+	}
+	.nav-main-menu {
+		display: flex;
+	}
+	.nav-flag {
+		transform: translate(0px, 15px);
 	}
 }
 
