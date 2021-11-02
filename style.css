@@ -283,12 +283,16 @@ color: #828282;
 }
 .khadamat-searchbox-nav{
 	
+	margin: 5px;
+	
 }
 .khadamat-wrapper{
 	display: none;
 }
 .khadamat-box-left{
-	display: none;
+	background-color:#EFF0F1;
+	border-radius: 10px;
+	padding: 20px;
 }
 
 .showwrapperkhadamat{
@@ -296,13 +300,68 @@ color: #828282;
 }
 .khadamat-article-nav{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: space-between;
 }
 .khadamat-parent-article{
 	flex-direction: column;
 }
 .khadamat-parent-article div{
 	padding-top: 20px;
+}
+.khadamat-parent-article div h4{
+	padding-bottom: 30px;
+}
+.khadamat-form-search-box{
+	display: flex;
+	width: 100%;
+}
+.khadamat-form-search-box input{
+	width: 80%;
+}
+
+.khadamat-box-search{
+	width: 20%;
+	background-color: #D1A041;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+}
+.khadamat-box-search div{
+	
+	justify-content: space-between;
+}
+.khadamat-box-search i{
+	color: white;
+	
+}
+.khadamat-parent-box-left{
+	margin-top: 50px;
+}
+.khadamat-wrapper{
+		color: #757575 ;
+		background-color: #C4C4C4; 
+	}
+.khadamat-wrapper li{
+		border: solid 1px;
+		width: 100%;
+		padding: 5px;
+		
+	}
+.khadamat-toggle{
+		color: black;
+		border-width: 30px;
+		padding: 10px;
+		
+	}
+
+.khadamat-form-search-box input{
+	text-align: left;
+	border-radius: 10px;
+	padding: 10px;
+	border: none;
+	
 }
 /*END KHADAMAT PAGE */
 
@@ -325,39 +384,23 @@ color: #828282;
 /* tablet */
 @media screen and (min-width: 768px) {
 	body {
-		background-color: pink;
+/*		background-color: pink;*/
 		
 	}
 	
 	.khadamat-box-left{
-	display:flex;
+	    display:flex;
 		flex-direction: column;
-	background-color:#EFF0F1; 
+	    background-color:#EFF0F1; 
 		position: sticky;
 		top: 20px;
 }
-	.khadamat-toggle{
-		color: #828282;
-		border-width: 30px;
-		padding: 10px;
-		
-	}
-
-	.khadamat-wrapper{
-		color: #757575 ;
-		background-color: #C4C4C4; 
-	}
 	.khadamat-searchbox-nav{
+		width: 100%;
 		
-		width: 100%;
-		border: solid red;
-	}
-	.khadamat-wrapper li{
-		border: solid 1px;
-		width: 100%;
-		border: solid yellow;
 		
 	}
+	
 	.khadamat-wrapper ul{
 		width: 100%;
 		border: solid #0000FF;
@@ -365,7 +408,15 @@ color: #828282;
 	
 	}
 	.khadamat-parent-article{
-		width: 70%;
+		width: 60%;
+	}
+	.khadamat-parent-box-left{
+		width: 35%
+		
+	}
+	.khadamat-article-nav{
+		flex-direction: row;
+	justify-content: space-between;
 	}
 }
 
