@@ -42,8 +42,8 @@ li {
 	--main-menu-li: #757575;
 }
 
-/************************************* end Global Style */
-/************************ START RESPONSIVE MENU */
+/************************************* END GLOBAL STYLE */
+/************************************* START RESPONSIVE MENU */
 
 /* start top menu responsive  */
 .parent-responsive-menu {
@@ -64,9 +64,17 @@ li {
 .ul-flag {
 	width: 100%;
 }
-
+.ul-flag-main-menu li {
+	position: relative;
+}
 .wrapper-flag-main-menu {
+	position: absolute;
 	display: none;
+	left: -12px;
+	top: 26px;
+	width: 91px;
+	border-radius: 5px;
+	background-color: var(--flag-background-color);
 }
 
 .ul-flag-main-menu li:hover .wrapper-flag-main-menu {
@@ -109,7 +117,17 @@ li {
 .ul-flag li:hover .wrapper-flag {
 	display: block;
 }
+.ul-flag li {
+	position: relative;
+}
 .wrapper-flag {
+	width: 91px;
+	left: -12px;
+	border-radius: 5px;
+	top: 26px;
+
+	background-color: var(--flag-background-color);
+	position: absolute;
 	display: none;
 }
 /* end top menu responsive  */
@@ -417,62 +435,54 @@ li {
 
 /*START KHADAMAT PAGE */
 
-.khadamat-main-section{
+.khadamat-main-section {
 	border: solid rebeccapurple;
-width: 100%;
+	width: 100%;
 	display: flex;
 	flex-direction: column;
-	gap:20px;
+	gap: 20px;
 	padding: 20px;
 }
-.khadamat-img-section{
-	width: 100%;
-	
-	
-}
-.khadamat-img-section img{
+.khadamat-img-section {
 	width: 100%;
 }
-.khadamat-main-section{
+.khadamat-img-section img {
+	width: 100%;
+}
+.khadamat-main-section {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
-.khadamat-main-section div h4{
-color: #828282;
-	
+.khadamat-main-section div h4 {
+	color: #828282;
 }
-.khadamat-main-section article{
+.khadamat-main-section article {
 	text-align: justify;
 }
-.khadamat-searchbox-nav{
-	
+.khadamat-searchbox-nav {
 }
-.khadamat-wrapper{
+.khadamat-wrapper {
 	display: none;
 }
-.khadamat-box-left{
+.khadamat-box-left {
 	display: none;
 }
 
-.showwrapperkhadamat{
+.showwrapperkhadamat {
 	display: block;
 }
-.khadamat-article-nav{
+.khadamat-article-nav {
 	display: flex;
 	flex-direction: row;
 }
-.khadamat-parent-article{
+.khadamat-parent-article {
 	flex-direction: column;
 }
-.khadamat-parent-article div{
+.khadamat-parent-article div {
 	padding-top: 20px;
 }
 /*END KHADAMAT PAGE */
-
-
-
-
 
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
@@ -525,45 +535,42 @@ color: #828282;
 @media screen and (min-width: 768px) {
 	body {
 		background-color: pink;
-		
 	}
-	
-	.khadamat-box-left{
-	display:flex;
+	.nav-main-menu {
+		display: flex;
+	}
+	.khadamat-box-left {
+		display: flex;
 		flex-direction: column;
-	background-color:#EFF0F1; 
+		background-color: #eff0f1;
 		position: sticky;
 		top: 20px;
-}
-	.khadamat-toggle{
+	}
+	.khadamat-toggle {
 		color: #828282;
 		border-width: 30px;
 		padding: 10px;
-		
 	}
 
-	.khadamat-wrapper{
-		color: #757575 ;
-		background-color: #C4C4C4; 
+	.khadamat-wrapper {
+		color: #757575;
+		background-color: #c4c4c4;
 	}
-	.khadamat-searchbox-nav{
-		
+	.khadamat-searchbox-nav {
 		width: 100%;
 		border: solid red;
 	}
-	.khadamat-wrapper li{
+	.khadamat-wrapper li {
 		border: solid 1px;
 		width: 100%;
 		border: solid yellow;
-		
 	}
-	.khadamat-wrapper ul{
+	.khadamat-wrapper ul {
 		width: 100%;
-		border: solid #0000FF;
+		border: solid #0000ff;
 		display: flex;
-	
 	}
-	.khadamat-parent-article{
+	.khadamat-parent-article {
 		width: 70%;
 	}
 
@@ -583,6 +590,15 @@ color: #828282;
 	.parent-text_and_socialMedia {
 		display: none;
 	}
+	.left-nav-responsive-menu {
+		display: none;
+	}
+	.nav-flag {
+		display: none;
+	}
+	.nav-icon-main {
+		display: flex;
+	}
 }
 
 /* desktop */
@@ -591,12 +607,6 @@ color: #828282;
 		background-color: gray;
 	}
 
-	.nav-flag {
-		display: none;
-	}
-	.nav-icon-main {
-		display: flex;
-	}
 	.left-nav-responsive-menu {
 		display: none;
 	}
