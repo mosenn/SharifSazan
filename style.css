@@ -594,6 +594,114 @@ li {
 }
 /*********************************************** END DAVAT BE HAMKARI */
 
+/************************************** START SABAD KHARID */
+
+.sabd-kharid-section-box {
+	display: flex;
+	flex-direction: column;
+}
+
+.sabd-kharid-section-box figure a img {
+	width: 100%;
+}
+
+.box-one-sabadkharid {
+	width: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 15px;
+	border-radius: 6px 6px 6px 15px;
+	background: #ffff;
+	box-shadow: 0px 2px 14px var(--c828282);
+}
+.nav-icon-sabadkharid {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+	justify-content: flex-end;
+}
+.ul-icon-sabad-kharid {
+	display: flex;
+	justify-content: flex-end;
+	width: fit-content;
+	border: 3px solid var(--cD1A041);
+	border-radius: 0px 15px 15px 15px;
+}
+.ul-icon-sabad-kharid li {
+	padding: 15px 5px;
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--cD1A041);
+}
+.box-one-sabadkharid figure a img {
+	padding: 15px;
+}
+.box-one-sabadkharid div {
+	width: 100%;
+	text-align: center;
+}
+.box-one-sabadkharid div p {
+	font-weight: bold;
+	color: var(--c828282);
+}
+.sabd-kharid-section-box form {
+	width: 100%;
+	display: none;
+
+	justify-content: center;
+}
+.btn-sabadkharid {
+	padding: 15px;
+	margin: 20px 15px;
+	width: 240px;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	font-weight: bold;
+	background-color: var(--cD1A041);
+}
+
+.title-sabadkharid {
+	margin: 15px;
+	color: var(--c828282);
+	font-weight: bold;
+}
+
+.parent-box-left-sabadkharid {
+	padding: 0px 15px;
+	margin: 0px 10px;
+}
+
+.btn-sabad-kharid-tablet {
+	display: none;
+}
+.parent-box-left-sabadkharid figure {
+	padding: 15px;
+	position: relative;
+}
+.ul-icon-sabad-kharid li i {
+	color: var(--cD1A041);
+}
+.parent-box-left-sabadkharid figure figcaption {
+	position: absolute;
+	bottom: 30px;
+	right: 10px;
+	
+	width: 92%;
+	font-size: 0.8rem;
+	font-weight: bold;
+	height: 40px;
+	background-color: #4fc2f749;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/************************************** END SABAD KHARID */
+
 /********************************* START USING FOR ALL PAGES  */
 
 /* start breadcrumb */
@@ -750,6 +858,16 @@ footer a {
 	.social-media-swiper {
 		display: none;
 	}
+	.sabd-kharid-section-box form {
+		display: flex;
+	}
+
+	.nav-icon-sabadkharid ul {
+		width: 50%;
+	}
+	.nav-icon-sabadkharid ul li {
+		padding: 15px;
+	}
 	.nav-icon-main {
 		display: none;
 	}
@@ -802,8 +920,62 @@ footer a {
 		background-color: pink;
 	}
 	footer {
-		grid-template-columns: repeat(auto-fit, 25%);
+		grid-template-columns: repeat(4, 25%);
 	}
+	.parent-box-left-sabadkharid figure figcaption {
+		width: 85%;
+	}
+	.box-one-sabadkharid {
+		transform: translate(-2px, 48px);
+		display: grid;
+		grid-template-columns: repeat(5, 20%);
+		height: 100%;
+		padding: 15px;
+	}
+	.box-one-sabadkharid div {
+		grid-column: 3/5;
+	}
+	.nav-icon-sabadkharid {
+		grid-column: 4/6;
+	}
+	.nav-icon-sabadkharid ul {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+		transform: translate(-15px, 15px);
+	}
+	.nav-icon-sabadkharid ul li {
+		width: 100%;
+	}
+	.box-one-sabadkharid div p {
+		font-size: 0.8rem;
+	}
+	.box-one-sabadkharid figure {
+		flex-basis: 40%;
+	}
+	.box-one-sabadkharid figure {
+		grid-column: 1/3;
+	}
+	.box-one-sabadkharid figure img {
+		margin-right: 20px;
+		padding: 5px;
+		margin: 5px;
+		width: 80%;
+	}
+	.sabd-kharid-section-box {
+		flex-direction: row;
+	}
+	.btn-sabad-kharid-tablet {
+		display: flex;
+		justify-content: center;
+	}
+
+	.btn-sabad-for-mob {
+		display: none;
+	}
+
 	.box-davat-pag {
 		width: 84%;
 	}
@@ -942,7 +1114,9 @@ footer a {
 	body {
 		background-color: gray;
 	}
-
+	.parent-box-left-sabadkharid figure figcaption {
+		width: 95%;
+	}
 	.btn-footer a {
 		font-size: 1rem;
 	}
@@ -974,6 +1148,7 @@ footer a {
 		font-size: 1rem;
 	}
 }
+
 /* laptop */
 @media screen and (min-width: 1024px) {
 	body {
