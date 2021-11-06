@@ -220,8 +220,12 @@ li {
 	width: 100%;
 	padding: 12px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: flex-start;
 	height: fit-content;
+}
+.ul-main-menu > li {
+	
+	margin-right: 50px;
 }
 .ul-main-menu li a {
 	color: var(--main-menu-li);
@@ -959,7 +963,9 @@ footer a {
 	.title-sabadkharid {
 		text-align: center;
 	}
-
+	.ul-main-menu > li {
+		margin-right: 9px;
+	}
 	.sabd-kharid-section-box form {
 		display: none;
 	}
@@ -1139,7 +1145,9 @@ footer a {
 	body {
 		background-color: gray;
 	}
-
+	.ul-main-menu > li {
+		margin-right: 30px;
+	}
 	.btn-footer a {
 		font-size: 1rem;
 	}
@@ -1176,5 +1184,9 @@ footer a {
 @media screen and (min-width: 1024px) {
 	body {
 		background-color: skyblue;
+	}
+
+	.ul-main-menu > li {
+		margin-right: 50px;
 	}
 }
