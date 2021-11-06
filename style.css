@@ -596,6 +596,11 @@ li {
 	font-weight: bold;
 	margin: 5px -9px 6px -1px;
 }
+.parent-img-and-text-davat{
+
+	display: flex;
+	flex-direction: column-reverse;
+}
 /*********************************************** END DAVAT BE HAMKARI */
 
 /************************************** START SABAD KHARID */
@@ -793,6 +798,7 @@ li {
 
 .fa-link{
 	color: var(--cD1A041);
+	padding: 10px;;
 }
 
 .parent-article-breadcrumb-section{
@@ -1198,7 +1204,23 @@ footer a {
 	.nav-icon-main {
 		display: flex;
 	}
+	.parent-img-and-text-davat{
+		
+		flex-direction: row;
+		
+	}
+	.section-one-davat{
+		display: flex;
+		align-items: center;
+		
+	
+	}
 
+	.section-one-davat figure img{
+ width: 300px;
+ height: 200px;
+ padding: 14px;
+	}
 }
 
 /* desktop */
