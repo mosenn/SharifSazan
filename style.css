@@ -789,6 +789,25 @@ li {
 
 /********************************* END USING FOR ALL PAGES  */
 
+/*********************************start davatbehamkari-sabtenam */
+
+.fa-link{
+	color: var(--cD1A041);
+}
+
+.parent-article-breadcrumb-section{
+	padding: 9px;
+}
+
+
+
+
+
+
+
+/*********************************end davatbehamkari-sabtenam */
+
+
 /************************************************ START FOOTER  */
 
 footer {
@@ -1138,6 +1157,7 @@ footer a {
 	.nav-icon-main {
 		display: flex;
 	}
+
 }
 
 /* desktop */
@@ -1178,6 +1198,7 @@ footer a {
 	.social-media-footer ul li a {
 		font-size: 1rem;
 	}
+
 }
 
 /* laptop */
@@ -1189,4 +1210,5 @@ footer a {
 	.ul-main-menu > li {
 		margin-right: 50px;
 	}
+	
 }
