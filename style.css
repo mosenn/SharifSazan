@@ -799,14 +799,55 @@ li {
 	padding: 9px;
 }
 
-
-
-
-
-
-
 /*********************************end davatbehamkari-sabtenam */
 
+/*********************************start news page */
+.parent-box-news{
+	display: flex;
+	flex-direction: column;
+	box-shadow: 6px 3px 14px 4px rgba(0,0,0,0.38);
+	border-radius: 5px 5px 5px 18px;
+	margin: 10px;
+}
+.parent-btn-more-news{
+	display: flex;
+	justify-content: flex-end;
+	
+}
+.btn-more-news{
+	background-color: var(--cD1A041);
+	padding: 10px;
+	width: 160px;
+	border-radius: 5px 5px 5px 18px;	
+}
+.btn-more-news a{
+	color: white;
+}
+.btn-more-news:hover{
+	background-color:white;
+	
+}
+ .btn-more-news a:hover{
+	color: var(--cD1A041);
+} 
+.text-news h5{
+    margin-bottom: 30px;
+}
+.text-news{
+	padding: 20px;
+	
+}
+.text-news a{
+	transition: 0.5s;
+
+}
+.text-news a:hover{
+	font-size: 18px;
+
+}
+
+
+/*********************************end news page */
 
 /************************************************ START FOOTER  */
 
