@@ -224,7 +224,6 @@ li {
 	height: fit-content;
 }
 .ul-main-menu > li {
-	
 	margin-right: 50px;
 }
 .ul-main-menu li a {
@@ -596,10 +595,15 @@ li {
 	font-weight: bold;
 	margin: 5px -9px 6px -1px;
 }
-.parent-img-and-text-davat{
-
+.parent-img-and-text-davat {
 	display: flex;
 	flex-direction: column-reverse;
+}
+.sapcelipanel {
+	margin-right: 5px;
+}
+.AddTextLi {
+	margin-right: 5px;
 }
 /*********************************************** END DAVAT BE HAMKARI */
 
@@ -796,106 +800,125 @@ li {
 
 /*********************************start davatbehamkari-sabtenam */
 
-.fa-link{
+.fa-link {
 	color: var(--cD1A041);
-	padding: 10px;;
+	padding: 10px;
 }
 
-.parent-article-breadcrumb-section{
+.parent-article-breadcrumb-section {
 	padding: 9px;
 }
 
 /*********************************end davatbehamkari-sabtenam */
 /*********************************start panel karbari*/
-.parent-panel{
-	border: solid;
+.parent-panel {
+	grid-column: 1/2;
+	grid-row: 1;
+
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items:center;
+	align-items: center;
 	gap: 10px;
 	background-color: white;
 }
-.fa-circle-user{
+.fa-circle-user {
 	font-size: 100px;
 	color: var(--c828282);
-	position: absolute;
-	justify-content: center;
-	align-items: center;
-	margin-left: 85px;
 }
-.fa-camera{
+
+.parent-topimg-paenlkarbari {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	transform: translate(-20px, 30px);
+}
+
+.parent-topimg-paenlkarbari img {
+	border-radius: 50%;
+	width: 70%;
+}
+
+.fa-camera {
 	color: var(--cD1A041);
 	font-size: 30px;
-	position: relative;
-	padding-top: 70px;
-	
+	transform: translate(36px, -23px);
 }
-.parent-btn-panel{
-	
+.parent-btn-panel {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
-.btn-change-password-panel{
-    background-color: var(--cD1A041);
-    border-radius:10px 0px 0px 10px;
-	width: 180px;
-	height: 50px;
-
+.parent-btn-panel > button {
+	border: none;
 }
-.btn-exit-panel{
-	border-radius:0px 10px 10px 0px;
+.btn-change-password-panel {
+	background-color: var(--cD1A041);
+	border-radius: 10px 0px 0px 10px;
 	width: 180px;
 	height: 50px;
 }
+.btn-exit-panel {
+	border-radius: 0px 10px 10px 0px;
+	width: 180px;
+	height: 50px;
+}
 
-.panel{
-		background-color: var(--bg-zire-menu);
+.panel {
+	background-color: var(--bg-zire-menu);
 	width: 100%;
 	padding: 5px;
 }
-.panel li a{
+.panel li a {
 	padding-right: 30px;
 }
 
-.parent-menu-panel{
-width: 100%;
-padding-top: 30px;
+.parent-menu-panel {
+	width: 100%;
+	padding-top: 30px;
 }
-.parent-menu-panel ul li{
+.parent-menu-panel ul li {
 	padding: 10px;
 }
-.fa-pencil , .fa-cart-plus,.fa-folder-open,.fa-window-restore,.fa-handshake{
+.fa-pencil,
+.fa-cart-plus,
+.fa-folder-open,
+.fa-window-restore,
+.fa-handshake {
 	color: var(--icon-color);
-	
 }
-.panel-icon-pf{
+.panel-icon-pf {
 	margin-left: 60px;
 }
-.parent-virayaesh-panel{
+.parent-virayaesh-panel {
 	margin: 10px;
 	border-radius: 15px;
-	box-shadow: 6px 3px 14px 4px rgba(0,0,0,0.38);
+	box-shadow: 6px 3px 14px 4px rgba(0, 0, 0, 0.38);
 	padding: 10px;
-    background-color: white;
+	background-color: white;
 }
-.parent-virayaesh-panel p{
+.parent-virayaesh-panel p {
 	text-shadow: 1px 2px 4px rgba(24, 23, 23, 0.5);
 	padding: 10px;
 }
-arent-virayaesh-panel form p{
+arent-virayaesh-panel form p {
 	color: var(--c828282);
-	width: 100%; 
-}
-.parent-virayaesh-panel form input{
-	border: none;
-	background-color: #F4F2F2;
-	border-radius: 10px;
 	width: 100%;
+}
+.wrapper-virayesh-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.parent-virayaesh-panel form input {
+	border: none;
+	background-color: #f4f2f2;
+	border-radius: 10px;
+	width: 250px;
 	height: 40px;
 }
-.button-changepass{
+.button-changepass {
 	background-color: var(--bg-btn);
 	margin-top: 40px;
 	border: none;
@@ -904,43 +927,53 @@ arent-virayaesh-panel form p{
 	color: white;
 	border-radius: 10px;
 }
-.parent-virayesh-etelaat-panel{
+.parent-virayesh-etelaat-panel {
 	background-color: white;
 	margin: 10px;
 	border-radius: 15px;
-	box-shadow: 6px 3px 14px 4px rgba(0,0,0,0.38);
+	box-shadow: 6px 3px 14px 4px rgba(0, 0, 0, 0.38);
 	padding: 10px;
 }
 
-.div-box1-virayesh-panel input ,.email-virayesh-panel{
+.div-box1-virayesh-panel {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.div-box1-virayesh-panel > input::placeholder,
+.email-virayesh-panel::placeholder {
+	font-weight: bold;
+	padding: 15px;
+}
+.div-box1-virayesh-panel > input,
+.email-virayesh-panel {
 	border: none;
-	background-color: #F4F2F2;
+	background-color: #f4f2f2;
 	border-radius: 10px;
 	height: 40px;
 	margin-top: 20px;
 	width: 200px;
 }
-.jensiate-panel{
+.jensiate-panel {
 	border: none;
-	background-color: #F4F2F2;
+	background-color: #f4f2f2;
 	border-radius: 10px;
-    height: 100px;
+	height: 100px;
 	width: 200px;
 	margin-top: 20px;
 	padding-top: 10px;
 }
-.parent-btn-virayeshe-etelaat{
+.parent-btn-virayeshe-etelaat {
 	display: flex;
 	width: 100%;
 	align-items: center;
 	justify-content: center;
 }
-.parent-virayesh-etelaat-panel p{
+.parent-virayesh-etelaat-panel p {
 	text-shadow: 1px 2px 4px rgba(24, 23, 23, 0.5);
 	padding: 10px;
-	
 }
-.btn-virayesh-etelaat-panel{
+.btn-virayesh-etelaat-panel {
 	background-color: var(--bg-btn);
 	margin-top: 40px;
 	width: 230px;
@@ -948,65 +981,73 @@ arent-virayaesh-panel form p{
 	color: white;
 	border-radius: 10px;
 	border: none;
-	
-
 }
 .grid-virayesh-etelaat {
 	display: grid;
 	grid-template-columns: 50% 50%;
-    border: solid;
-    gap: 10px;
 
+	gap: 10px;
 }
+
+.parent-virayaesh-panel {
+	display: none;
+}
+
+#parent-breadcrumb-section-virayesh {
+	display: none;
+}
+
+#parent-breadcrumb-section-virayesh.showViryesh,
+.parent-virayaesh-panel.showViryesh {
+	display: block;
+}
+
+.parent-parent-panel {
+	display: grid;
+}
+
 /*********************************end panel karbari*/
 /*********************************start news page */
-.parent-box-news{
+.parent-box-news {
 	display: flex;
 	flex-direction: column;
-	box-shadow: 6px 3px 14px 4px rgba(0,0,0,0.38);
+	box-shadow: 6px 3px 14px 4px rgba(0, 0, 0, 0.38);
 	border-radius: 5px 5px 5px 18px;
 	margin: 10px;
 }
-.parent-btn-more-news{
+.parent-btn-more-news {
 	display: flex;
 	justify-content: flex-end;
-	
 }
-.btn-more-news{
+.btn-more-news {
 	background-color: var(--cD1A041);
 	padding: 10px;
 	width: 160px;
-	border-radius: 5px 5px 5px 18px;	
+	border-radius: 5px 5px 5px 18px;
 }
-.btn-more-news a{
+.btn-more-news a {
 	color: white;
 }
-.btn-more-news:hover{
-	background-color:white;
-	
+.btn-more-news:hover {
+	background-color: white;
 }
- .btn-more-news a:hover{
+.btn-more-news a:hover {
 	color: var(--cD1A041);
-} 
-.text-news h5{
-    margin-bottom: 30px;
 }
-.text-news{
+.text-news h5 {
+	margin-bottom: 30px;
+}
+.text-news {
 	padding: 20px;
-	
 }
-.text-news a{
+.text-news a {
 	transition: 0.5s;
-
 }
-.text-news a:hover{
+.text-news a:hover {
 	font-size: 18px;
-
 }
-
 
 /*********************************end news page */
-
 
 /************************************************ START FOOTER  */
 
@@ -1357,42 +1398,36 @@ footer a {
 	.nav-icon-main {
 		display: flex;
 	}
-	.parent-img-and-text-davat{
-		
+	.parent-img-and-text-davat {
 		flex-direction: row;
-		
 	}
-	.section-one-davat{
+	.section-one-davat {
 		display: flex;
 		align-items: center;
-		
-	
 	}
 
-	.section-one-davat figure img{
- width: 300px;
- height: 200px;
- padding: 14px;
+	.section-one-davat figure img {
+		width: 300px;
+		height: 200px;
+		padding: 14px;
 	}
-		/* **********start panel karbari */
-		.parent-parent-panel{
-			display: grid;
-			grid-template-columns: 30% 70%;
-			border: solid springgreen;
-		}
-		.parent.panel{
-			margin-right: 100px;
-			border: solid blue;
-			width: 100%;
-		}
-		.parent-virayesh-etelaat-panel{
-		 height: 500px;
-	
-		}
-		.menu-panel{
-			display: none;
-		}
+	/* **********start panel karbari */
 
+	.parent-parent-panel {
+		display: grid;
+		grid-template-columns: 30% 70%;
+	}
+	.parent.panel {
+		margin-right: 100px;
+		border: solid blue;
+		width: 100%;
+	}
+	.parent-virayesh-etelaat-panel {
+		height: 500px;
+	}
+	.menu-panel {
+		display: none;
+	}
 }
 
 /* desktop */
@@ -1433,8 +1468,6 @@ footer a {
 	.social-media-footer ul li a {
 		font-size: 1rem;
 	}
-	.parent-menu-panel
-
 }
 
 /* laptop */
@@ -1447,18 +1480,13 @@ footer a {
 		margin-right: 50px;
 	}
 	/* **********start panel karbari */
-	.parent-parent-panel{
-		display: grid;
-		grid-template-columns: 30% 70%;
-		border: solid springgreen;
-	}
-	.parent.panel{
+
+	.parent.panel {
 		margin-right: 100px;
 		border: solid blue;
 		width: 100%;
 	}
-	.parent-virayesh-etelaat-panel{
-     height: 500px;
-
+	.parent-virayesh-etelaat-panel {
+		height: 500px;
 	}
 }
