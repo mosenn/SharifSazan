@@ -439,6 +439,66 @@ li {
 }
 
 /****************************************** END PARENT-TEXT_AND_SOCIALMEDIA */
+/******************************************* START tamas ba ma*/
+
+.parent-call{
+	display: flex;
+	border: solid;
+	flex-direction: column-reverse;
+	margin-top: 50px;
+}
+.call-col1{
+	border: solid springgreen;
+	width: 100%;
+	
+}
+.call-col2{
+	border: solid red;
+	width: 100%;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+.parent-address-phone{
+	border: solid;
+	width: 100%;;
+}
+.address-call {
+	display: flex;
+	margin: 15px;
+	padding: 10px;
+
+}
+.phone-call{
+	display: flex;
+	margin-right:20px;
+
+}
+.address-call i , .phone-call i{
+	margin-left: 10px;
+}
+.nav-socialmedia-call{
+	width: 100%;
+	
+}
+.nav-socialmedia-call ul{
+	display: flex;
+	width: 100%;
+	border: solid blue;
+	align-items: center;
+	justify-content: center;
+	margin: 15px 0px;
+
+}
+.nav-socialmedia-call ul li{
+	padding: 15px;
+}
+.map-call iframe{
+	width: 100%;
+}
+/******************************************* end tamas ba ma */
 
 /******************************************* START KHADAMAT PAGE */
 
@@ -1219,6 +1279,9 @@ footer a {
 @media screen and (min-width: 768px) {
 	body {
 		background-color: pink;
+	}
+	.parent-call{
+		flex-direction: row;
 	}
 	.title-sabadkharid {
 		text-align: center;
