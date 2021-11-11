@@ -446,14 +446,29 @@ li {
 	border: solid;
 	flex-direction: column-reverse;
 	margin-top: 50px;
+
+}
+.background-col1-call{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:white;
+	border: solid red;
+	position: absolute;
+
 }
 .call-col1{
-	border: solid springgreen;
 	width: 100%;
-	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 30px;
+	background-image: url(imgs/-5908894733596472842_121\ 2.png);
+	position: relative;
 }
 .call-col2{
-	border: solid red;
+	
 	width: 100%;
 	
 	display: flex;
@@ -486,7 +501,6 @@ li {
 .nav-socialmedia-call ul{
 	display: flex;
 	width: 100%;
-	border: solid blue;
 	align-items: center;
 	justify-content: center;
 	margin: 15px 0px;
@@ -497,6 +511,51 @@ li {
 }
 .map-call iframe{
 	width: 100%;
+}
+.title-call{
+font-weight:bolder 300;
+}
+ .form-nazarat-call{
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+	gap: 20px;
+	border: solid;
+	margin: 50px;
+}
+.form-nazarat-call textarea{
+	resize: none;
+	height: 200px;
+	border-radius: 10px;
+	border:none;
+	box-shadow: 1px 0px 7px 2px var(--c828282);
+	padding: 20px;
+}
+.form-nazarat-call input{
+	width: 100%;
+	padding: 20px;
+	height: 50px;
+	border-radius: 10px;
+	border:none;
+	box-shadow: 1px 0px 7px 2px var(--c828282);
+	 background-color: white;
+} 
+.parent-form{
+	width: 100%;
+}
+.btn-call{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.btn-call button{
+	background-color: var(--bg-btn);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	height:40px ;
+	border-radius: 8px;
 }
 /******************************************* end tamas ba ma */
 
@@ -1280,6 +1339,9 @@ footer a {
 	body {
 		background-color: pink;
 	}
+	.call-col2{
+		width: 50%;
+	}
 	.parent-call{
 		flex-direction: row;
 	}
@@ -1498,6 +1560,9 @@ footer a {
 	body {
 		background-color: gray;
 	}
+	.call-col2{
+		width: 50%;
+	}
 	.ul-main-menu > li {
 		margin-right: 30px;
 	}
@@ -1537,6 +1602,9 @@ footer a {
 @media screen and (min-width: 1024px) {
 	body {
 		background-color: skyblue;
+	}
+	.call-col2{
+		width: 50%;
 	}
 
 	.ul-main-menu > li {
