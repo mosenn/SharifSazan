@@ -1202,7 +1202,72 @@ arent-virayaesh-panel form p {
 }
 
 /*********************************end news page */
+/************************start moshakhasat page*/
 
+.shopBox{
+	display: grid;
+/*	grid-template-columns: auto ;*/
+	box-shadow: 2px 3px 20px 2px black;
+	border-radius: 5px;
+}
+.shopBoxBtn-moshakhasat{
+	background-color: var(--bg-btn);
+	border-radius: 5px;
+	border: none;
+	box-shadow: 2px 3px 20px 2px #d1af41;
+	height: 40px;
+	color: white;
+	
+}
+.shopBoxDiv{
+	display: grid;
+		grid-template-columns: 30% 70%;
+		gap: 10px;
+	
+}
+.shopBoxImg{
+	grid-area: 1 / 1 / 2 / 1 ;
+
+}
+
+.moshakhasat-box-left {
+	display: flex;
+	flex-direction: column;
+	background-color: #eff0f1;
+	position: sticky;
+	top: 60px;
+	border-radius: 10px;
+	gap: 25px;
+	padding: 15px;
+	box-shadow: 2px 2px 10px 2px #c4c4c4;
+}
+.moshakhasat-article-nav {
+	display: grid;
+	grid-template-columns: 100%;
+	gap: 37px;
+}
+.moshakhasat-parent-box-left {
+	height: 470px;
+	font-weight: bold;
+	
+}
+.moshakhasat-name-job {
+display: flex;
+flex-direction: column;
+gap: 20px;
+
+
+}
+.moshakhasat-offer{
+	display: flex;
+	flex-direction: row;
+	gap: 40px;
+}
+.moshakhasat-offer-p{
+	color: red;
+}
+
+/************************end moshakhasat page*/
 /************************************************ START FOOTER  */
 
 footer {
@@ -1295,6 +1360,7 @@ footer a {
 	.social-media-swiper {
 		display: none;
 	}
+	
 	.sabd-kharid-section-box form {
 		display: flex;
 	}
@@ -1330,6 +1396,15 @@ footer a {
 @media screen and (min-width: 577px) {
 	body {
 		background-color: green;
+	}
+	.moshakhasat-article-nav {
+		gap: 30px;
+	}
+	.shopBoxDiv{
+		display: grid;
+			grid-template-columns: 20% 70%;
+			gap: 10px;
+		
 	}
 	.sabd-kharid-section-box form {
 		display: flex;
@@ -1373,6 +1448,16 @@ footer a {
 @media screen and (min-width: 768px) {
 	body {
 		background-color: pink;
+	}
+	.shopBoxDiv{
+		display: grid;
+			grid-template-columns: 20% 80%;
+			gap: 10px;
+		
+	}
+	.moshakhasat-name-job{
+		justify-content: flex-start;
+		
 	}
 	.call-col2 {
 		width: 50%;
@@ -1528,9 +1613,20 @@ footer a {
 	.khadamat-parent-box-left {
 		width: 35%;
 	}
-	.khadamat-article-nav {
-		flex-direction: row;
-		justify-content: space-between;
+	.moshakhasat-article-nav {
+		display: grid;
+		grid-template-columns: 55% 40%;
+		gap: 37px;
+	}
+	.shopBoxDiv{
+		
+		gap: 45px;
+	}
+	.moshakhasat-offer{
+		gap: 14px;
+	}
+	.moshakhasat-box-left{
+		padding: 40px;
 	}
 
 	.social-media-swiper {
