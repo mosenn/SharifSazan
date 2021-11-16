@@ -1,0 +1,186 @@
+<!doctype html>
+<html  dir="rtl" lang="fa">
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	
+<!--sign up-->
+<!--main div-->
+<div class="base-div" id="base-div">
+	
+	
+<!--right side	-->
+	
+        <div class="right-side">
+            <form class="form-right" action="">
+				
+				<div class="gender">
+                <label for=""><b>جنسیت</b>*</label>
+				
+				<input class="rd" type="radio" name="rd1">
+				<label for=""><b>خانم</b></label>
+				
+
+				<input class="rd" type="radio" name="rd1">
+				<label for=""><b>آقا</b></label></div>
+			  
+			
+              	<div class="job"><label  for="" class="label1"><b>شغل</b></label>
+				<input type="text" class="txt1"></div>
+				
+				
+				<input type="text" class="txt2" required placeholder="ایمیل یا شماره موبایل">
+				
+				
+				<input type="text" class="txt2" required placeholder="رمز عبور (حداقل 7 حرف)*">
+
+				
+				<div><input type="text" class="txt3" required placeholder="کد امنیتی">
+				<div class="code"><p><b>79+3</b></p></div></div>
+				
+				<button class="btn1">ثبت نام</button>
+
+				<p class="or"><bb>___________یا__________</bb></p>
+		 		<button class="btn2">ثبت نام/ ورود ,&nbsp; به گوگل <b>G</b></button>
+			
+			</form>
+			</div>
+<!--end right side	-->
+		
+
+
+        
+	
+<!--left side-->
+    <div class="left-side-2">
+			
+			<div class="left-button-div">
+				<button class="left-button1" id="sign-up" onClick="m2()"><b>ثبت نام</b></button>
+				<button class="left-button2" id="sign-in" onClick="m1()"> <b>ورود</b></button>
+			</div>
+	</div>
+<!--end left side-->
+    </div>
+<!--end main div-->
+<!--end sign up-->
+	
+
+	
+<!--sign in-->
+	<!--main div-->
+<div class="base-div2" id="base-div2">
+	
+	
+<!--right side	-->
+	
+        <div class="right-side2">
+            <form class="form-right2" action="">
+				
+			
+				
+				
+				<input type="text" class="txt2" required placeholder="ایمیل یا شماره موبایل">
+			  &nbsp;
+<input type="text" class="txt2" required placeholder="رمز عبور (حداقل 7 حرف)*">
+
+				
+				<div><input type="text" class="txt3" required placeholder="کد امنیتی">
+				<div class="code"><p ><b>79+3</b></p></div></div>
+				
+				<button class="btn1" >ورود</button>
+
+				<p class="forget-pass"><a href="forgetpass.html" target="_blank">آیا رمز عبور خود را فراموش کرده اید؟</a></p>
+		 	
+			
+			</form>
+			</div>
+<!--end right side	-->
+
+        
+	
+<!--left side-->
+    <div class="left-side">
+			
+			<div class="left-button-div">
+				<button class="left-button1" onClick="m2()"><b>ثبت نام</b></button>
+				<button class="left-button2" id="sign-in2" onClick="m1()"> <b>ورود</b></button>
+			</div>
+	</div>
+<!--end left side-->
+    </div>
+<!--end main div-->
+	
+
+	
+	
+<!--end sign in-->
+	
+<!--sign in and sign up functions-->
+	
+	
+	
+	
+	
+<!--sign in and sign up functions-->
+	
+	
+	
+	
+	
+	
+	<script>
+	
+	
+		
+		function m1(){
+			
+			document.getElementById("base-div2").style.display="grid";
+			document.getElementById("base-div").style.display="none";
+		}
+	
+		function m2()
+		{
+			document.getElementById("base-div").style.display="grid";
+			document.getElementById("base-div2").style.display="none";
+			
+		}
+	
+	
+	</script>	
+	<!-- end sign in and sign up functions-->	
+	
+	
+	
+	
+	
+	
+	
+	<script>
+	
+	
+		
+		function m1(){
+			
+			document.getElementById("base-div2").style.display="grid";
+			document.getElementById("base-div").style.display="none";
+			document.getElementById("sign-in2").style.backgroundColor="#FFFFFF99";
+		}
+	
+		function m2()
+		{
+			document.getElementById("base-div").style.display="grid";
+			document.getElementById("base-div2").style.display="none";
+			document.getElementById("sign-up").style.backgroundColor="#FFFFFF99";
+			
+		}
+	
+	
+	</script>	
+	<!-- end sign in and sign up functions-->
+</body>
+
+</html>
