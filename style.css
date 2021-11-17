@@ -2040,12 +2040,22 @@ input:hover {
 	top: -40px;
 	right: 0px;
 	font-size: 20px;
-	border: 1px solid red;
 	margin-bottom: 100px;
 }
 
-.didan-hame-b32 p {
+.didan-hame-b32 {
+	width: 80%;
 	margin-right: 20px;
+}
+.didan-hame-b32 a {
+	color: var(--cD1A041);
+}
+.didan-hame-b32 span {
+	display: inline-block;
+	transform: translate(-5px, 3px);
+}
+.didan-hame-b32 span i {
+	color: var(--cD1A041);
 }
 
 /**********  end  b32 page   */
