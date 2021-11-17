@@ -4,12 +4,10 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: iranL;
-	direction: rtl;
 }
 
 body {
 	font-family: iranL;
-	direction: rtl;
 }
 
 /************************************************* ANIMATION BTN HOMPAGE */
@@ -1576,7 +1574,7 @@ input:hover {
 }
 
 .main-scorllsHorinzentalPages::-webkit-scrollbar-thumb {
-	background-color: rgb(179, 156, 58);
+	background-color: var(--cD1A041);
 	border-radius: 20px;
 	border: 5px solid rgb(207, 206, 203);
 }
@@ -1961,6 +1959,97 @@ input:hover {
 	display: block;
 }
 
+/********** start  b32 page   */
+
+.b-32pageSc img {
+	padding: 15px;
+}
+.first-title-b36 {
+	display: none;
+}
+.b32rowimg {
+	margin-left: 50px;
+}
+.b-32pageSc {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.b32rowimg > img {
+	width: 100%;
+}
+.imgb32 {
+	margin: 0px;
+}
+.b-32pageSc figure {
+	width: 84%;
+	height: 80%;
+}
+.b-32pageSc figure:hover figcaption {
+	height: 74%;
+}
+.b-32pageSc figure figcaption {
+	width: 104%;
+	right: -4px;
+
+	top: 25px;
+}
+.b-32pageSc figure figcaption div {
+	height: unset;
+}
+.b-32pageSc figure figcaption div p {
+	margin-top: 0px;
+}
+
+.b-32pageSc .b32-figcaption {
+	right: 19px;
+	width: 85%;
+}
+
+.t-b32 h6 {
+	margin-bottom: -30px;
+}
+
+.btn-b32 {
+	position: absolute;
+	width: 105%;
+	bottom: -5px;
+	padding: 5px;
+	outline: none;
+	border: none;
+	border-radius: 4px 4px 0px 0px;
+	background-color: #d1a040;
+}
+.btn-b32 a {
+	display: flex;
+	color: #fff;
+
+	width: 100%;
+	justify-content: center;
+}
+.btn-btn-b32-2 {
+	width: 88%;
+}
+
+.didan-hame-b32 {
+	width: 100%;
+	text-align: right;
+
+	position: absolute;
+	top: -40px;
+	right: 0px;
+	font-size: 20px;
+	border: 1px solid red;
+	margin-bottom: 100px;
+}
+
+.didan-hame-b32 p {
+	margin-right: 20px;
+}
+
+/**********  end  b32 page   */
+
 /****************************************** END ALL PAGES SCORLL STYLE */
 
 /********************************************** RESPONSIVE SCOPE */
@@ -1969,6 +2058,7 @@ input:hover {
 	.social-media-swiper {
 		display: none;
 	}
+
 	.sabd-kharid-section-box form {
 		display: flex;
 	}
@@ -2428,6 +2518,21 @@ input:hover {
 	}
 
 	/**************** PAGES SCORLL START */
+	.b-32pageSc figure {
+	}
+
+	.b-32pageSc img {
+		padding: 15px;
+	}
+
+	.b32rowimg {
+		margin-left: 70px;
+	}
+
+	.row3b32,
+	.row2b32 {
+		margin-right: 40px;
+	}
 
 	.MenuPageScorll {
 		left: 74px;
@@ -2587,5 +2692,13 @@ input:hover {
 		width: 300px;
 		height: 80px;
 		border-radius: 5px;
+	}
+	.b-32pageSc figure:hover figcaption {
+		height: 85%;
+	}
+	.b-32pageSc figure figcaption {
+		width: 100%;
+		height: 0%;
+		top: 30px;
 	}
 }
