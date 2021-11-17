@@ -2124,13 +2124,12 @@ input:hover {
 	margin-top: 2px;
 }
 .parent-check-box-filter {
-	border: 1px solid red;
+	
 	margin-top: 50px;
 }
 
 .parent-p-filter {
 	text-align: right;
-	
 }
 .parent-p-filter > p {
 	margin-right: 20px;
@@ -2138,7 +2137,6 @@ input:hover {
 
 .parent-check-box-filter form {
 	display: flex;
-	border: 1px solid blue;
 	margin-top: 15px;
 	justify-content: flex-end;
 }
@@ -2163,6 +2161,14 @@ input:hover {
 	display: block;
 }
 
+.parent-p-filter span {
+	display: inline-block;
+	margin-top: 5px;
+	margin-right: 5px;
+}
+.parent-p-filter span i {
+	color:#cf750e;
+}
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -2637,6 +2643,9 @@ input:hover {
 	}
 
 	/**************** PAGES SCORLL START */
+	.parent-filter-menu {
+		left: 74px;
+	}
 
 	.b-32pageSc img {
 		padding: 15px;
