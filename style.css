@@ -2075,7 +2075,8 @@ input:hover {
 	padding: 10px;
 }
 .RowProject {
-	border: 50px solid #fff;
+	border-right: 50px solid #fff;
+	border-left: 50px solid #fff;
 }
 .RowProject figure img {
 	width: 220px;
@@ -2086,8 +2087,82 @@ input:hover {
 /****************************************** END ALL PAGES SCORLL STYLE */
 .projimg {
 	margin-left: 50px;
-	border: 1px solid red;
 }
+.Project-wrapper figure:hover figcaption {
+	height: 175px;
+}
+.Project-wrapper figure figcaption {
+	top: 0px;
+	right: 24px;
+	width: 172px;
+}
+.proj-text-fig {
+	height: unset;
+}
+.proj-text-fig p {
+	margin: 0px;
+}
+
+.parent-filter-menu {
+	display: none;
+	background-color: #d6d5d5;
+	left: 44px;
+	width: 250px;
+	position: absolute;
+	height: 100vh;
+	z-index: 999;
+	overflow-y: scroll;
+}
+.filter-parnet-btn {
+	display: flex;
+	justify-content: flex-end;
+}
+.filter-parnet-btn > button {
+	font-weight: bold;
+	width: 13%;
+	margin-right: 19px;
+	margin-top: 2px;
+}
+.parent-check-box-filter {
+	border: 1px solid red;
+	margin-top: 50px;
+}
+
+.parent-p-filter {
+	text-align: right;
+	
+}
+.parent-p-filter > p {
+	margin-right: 20px;
+}
+
+.parent-check-box-filter form {
+	display: flex;
+	border: 1px solid blue;
+	margin-top: 15px;
+	justify-content: flex-end;
+}
+
+.parent-check-box-filter form input {
+	padding: 15px;
+	width: 20px;
+	border: none;
+	outline: none;
+	border-radius: 35px;
+}
+.parent-check-box-filter form label {
+	transform: translate(0px, 5px);
+}
+
+.line-filter {
+	border: 1px solid rgb(177, 175, 175);
+	margin: 15px 0px;
+}
+
+.showfiltermenu {
+	display: block;
+}
+
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -2747,5 +2822,14 @@ input:hover {
 	.RowProject figure img {
 		width: 300px;
 		height: 184px;
+	}
+
+	.Project-wrapper figure:hover figcaption {
+		height: 185px;
+	}
+	.Project-wrapper figure figcaption {
+		top: 0px;
+		right: 60px;
+		width: 180px;
 	}
 }
