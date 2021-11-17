@@ -12,10 +12,8 @@
 
 
         <style>
-            .main-scorllsHorinzentalPages {
-                overflow-x: scroll;
-                display: flex;
-                height: 94vh;
+            body {
+                overflow: hidden;
             }
 
         </style>
@@ -36,13 +34,19 @@
                         <p>منو</p>
                     </div>
                     <div class="parent-btn-menu-pagesHS">
+                        <button class="filter-menu">
+                            <i class="fas fa-poll-h"></i>
+                        </button>
+                        <p>فیلتر ها</p>
                         <button>
                             <i class="fas fa-arrow-left"></i>
                         </button>
                         <p>بازگشت</p>
 
                     </div>
+
                 </div>
+
 
                 <figure class="menu-img-team-ma">
                     <img src="imgs/sharif.png" alt="">
@@ -184,27 +188,125 @@
             </menu>
             <!-- end Menu  -->
 
+
+
+            <!-- start filter  -->
+
+            <div class="parent-filter-menu">
+                <div class="filter-parnet-btn">
+                    <button class="close-btn-filter">X</button>
+                </div>
+
+
+                <div class="parent-check-box-filter">
+                    <div class="parent-p-filter">
+                        <p>
+                            <span><i class="fas fa-sort-amount-up"></i>
+                            </span>
+                            نوع
+
+
+                        </p>
+                    </div>
+                    <form action="#">
+
+                        <label for="">مجتمع ساختمانی</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">مجتمع صعنتی</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">پل و تقاطع غیر مسطح</label>
+                        <input type="checkbox">
+                    </form>
+
+                    <div class="line-filter"></div>
+
+                    <div class="parent-p-filter">
+                        <p>
+                            <span><i class="fas fa-shapes"></i></span>
+                            مفهوم
+
+                        </p>
+                    </div>
+                    <form action="#">
+
+                        <label for="">تکمیل شد</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">در حال پیشرفت</label>
+                        <input type="checkbox">
+                    </form>
+
+
+                    <div class="line-filter"></div>
+                    <div class="parent-p-filter">
+                        <p>
+                            <span><i class="fas fa-bars"></i></span>
+                            مرتب سازی
+
+                        </p>
+
+                    </div>
+
+                    <form action="#">
+
+                        <label for="">پیش فرض</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">مقیاس منطقه</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">سال </label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">متراژ پروژه </label>
+                        <input type="checkbox">
+                    </form>
+
+                    <form action="#">
+                        <label for="">ارتفاع </label>
+                        <input type="checkbox">
+                    </form>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- end filter -->
+
+
             <!-- end left banner sharifsazan and menu  -->
 
 
 
 
 
-            <div class="text-projeha-page-projeha">
+            <!-- <div class="text-projeha-page-projeha">
                 <p>پروژه ها</p>
-            </div>
+            </div> -->
+
+
             <!-- start RowsImgsPageScH imgs have four imgs -->
             <section class="RowsImgsPageScH RowProject">
                 <!-- wrapper one  -->
-                <div class="wrapper-RowsImgs-PageScH">
+                <div class="wrapper-RowsImgs-PageScH Project-wrapper">
                     <!-- figure one -->
                     <figure>
                         <a href="#">
                             <img src="imgs/project1.png" alt="" class="projimg">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -220,9 +322,9 @@
                         <a href="#">
                             <img src="imgs/project1.png" alt="">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -238,9 +340,9 @@
                         <a href="#">
                             <img src="imgs/project1.png" alt="">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -256,9 +358,9 @@
                         <a href="#">
                             <img src="imgs/project1.png" alt="">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -273,14 +375,14 @@
 
                 </div>
                 <!-- wrapper two  -->
-                <div class="wrapper-RowsImgs-PageScH">
+                <div class="wrapper-RowsImgs-PageScH Project-wrapper">
                     <figure>
                         <a href="#">
                             <img src="imgs/project1.png" alt="" class="projimg">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -295,9 +397,9 @@
                         <a href="#">
                             <img src="imgs/project1.png" alt="">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -312,9 +414,9 @@
                         <a href="#">
                             <img src="imgs/project1.png" alt="">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -329,9 +431,9 @@
                         <a href="#">
                             <img src="imgs/project1.png" alt="">
                         </a>
-                        <figcaption>
+                        <figcaption class="proj-figcaption">
 
-                            <div class="text-figcaptionPagesScH">
+                            <div class="text-figcaptionPagesScH proj-text-fig">
                                 <p>الهام علیزاده</p>
                                 <p>طراح سازه</p>
 
@@ -349,6 +451,7 @@
 
         </main>
     </body>
+    <script src="menuwithfilter.js"></script>
     <script src="menuPageScorllhorizontal.js"></script>
     <script src="ScorllHorizontallPages.js"></script>
 
