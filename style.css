@@ -375,54 +375,11 @@ li {
 
 /*****************************START page fail
 
-
-.user-name-successfull{
-	display: none;
-	margin: 30px;
-}
-
-
-
-
-
 /*......start of success-input......*/
 
-.parent-successfull {
-	text-align: center;
-	width: 100%;
-	height: 80vh;
-	display: flex;
-	flex-direction: column;
-	gap: 30px;
-	padding-top: 20px;
-}
-.azmun-success {
-	display: flex;
-	flex-direction: column;
-	gap: 15px;
-}
 
-.input-success {
-	width: 75%;
-	height: 47px;
-	display: flex;
-	align-self: center;
-	gap: 10px;
-	justify-content: flex-start;
-	border-radius: 8px;
-	border: none;
-	box-shadow: 2px 2px 10px 2px #c0c0c0;
-}
 
-.azmun-text {
-	flex-grow: 1;
-	align-self: flex-start;
-}
 
-.img-successfull {
-	width: 30px;
-	height: 30px;
-}
 
 /*......end of success-input......*/
 
@@ -1253,6 +1210,18 @@ arent-virayaesh-panel form p {
 	box-shadow: 6px 3px 14px 4px rgba(0, 0, 0, 0.38);
 	border-radius: 5px 5px 5px 18px;
 	margin: 10px;
+}
+
+.text-box-news {
+	height: 1px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+}
+.showtextnews {
+	height: 99%;
+	opacity: 1;
+	visibility: visible;
 }
 .parent-btn-more-news {
 	display: flex;
@@ -2287,15 +2256,111 @@ input:hover {
 .fa-bars {
 	cursor: pointer;
 }
+
+/****************************** start story page */
+
+.story-ul {
+	border: 1px solid red;
+	display: flex;
+	flex-direction: column;
+
+	align-items: flex-end;
+}
+
+.story-ul li {
+	margin-right: 20px;
+	font-weight: bold;
+	color: #757575;
+	font-size: 12px;
+	padding: 5px;
+}
+.figcaption-img-story-project {
+	text-align: center;
+	width: 100%;
+	color: #ffff;
+	position: absolute;
+	font-size: 15px;
+	font-weight: bold;
+	background-color: rgba(42, 42, 42, 0.698);
+	bottom: 0px;
+}
+
+.figcaption-img-story-project > p {
+	margin-left: 25px;
+}
+
+/********************* START PAGE NAZARAT************ */
+
+.parent-sabtNazar {
+	margin-top: 15%;
+	display: grid;
+	justify-content: center;
+	flex-direction: column;
+	background-color: white;
+	box-shadow: 2px 2px 10px 2px #b4b2b2;
+	border-radius: 5px;
+	width: 305px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.crossSign-sabtNazar {
+	width: 15px;
+}
+.boxDiv-sabtNazar {
+	display: grid;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	height: 380px;
+}
+
+.star-sabtNazar {
+	display: flex;
+}
+
+.starDiv-sabtNazar {
+	margin-top: 13px;
+	margin-right: 10px;
+}
+
+.starImg-sabtNazar {
+	width: 20px;
+}
+
+.p-sabtNazar {
+	color: #bdbdbd;
+}
+
+.span-sabtNazar {
+	color: black;
+}
+
+.boxDiv-sabtNazar input {
+	border-radius: 5px;
+	box-shadow: 2px 2px 10px 2px #b4b2b2;
+	border: none;
+	height: 30px;
+}
+
+.nazarShomaText {
+	height: 80px;
+}
+.sendBut-sabtNazar {
+	background-color: #da9e3f;
+	color: white;
+	font-weight: bold;
+	box-shadow: none;
+	margin-top: 20px;
+}
+/********************* END PAGE NAZARAT ************ */
+
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
 	.social-media-swiper {
 		display: none;
 	}
-	.parent-successfull {
-		background-color: #ffffff;
-	}
+
 	.sabd-kharid-section-box form {
 		display: flex;
 	}
@@ -2425,6 +2490,11 @@ input:hover {
 	body {
 		background-color: pink;
 	}
+
+	.parent-sabtNazar {
+		margin-top: 8%;
+	}
+
 	.activeResMenu {
 		display: none;
 	}
@@ -2444,20 +2514,14 @@ input:hover {
 	}
 
 	.boxDiv-sabtNazar {
-		width: 40%;
+		width: 100%;
 	}
 	.user-name-successfull {
 		display: block;
 	}
 
-	.parent-successfull {
-		background-image: url('pic/2.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-
 	.input-success {
-		width: 30%;
+		width: 100%;
 	}
 	/* PAGE SCORLL  */
 
@@ -2747,73 +2811,8 @@ input:hover {
 		margin-top: 200px;
 		width: 600px;
 	}
-
-	/********************* start nazar shoma page************ */
-
-	.parent-sabtNazar {
-		margin-top: 15%;
-		display: grid;
-		justify-content: center;
-		flex-direction: column;
-		background-color: white;
-		box-shadow: 2px 2px 10px 2px #b4b2b2;
-		border-radius: 5px;
-		width: 305px;
-		margin-right: auto;
-		margin-left: auto;
-	}
-	.crossSign-sabtNazar {
-		width: 15px;
-	}
-	.boxDiv-sabtNazar {
-		display: grid;
-		justify-content: center;
-		flex-direction: column;
-		width: 100%;
-		height: 380px;
-	}
-
-	.star-sabtNazar {
-		display: flex;
-	}
-
-	.starDiv-sabtNazar {
-		margin-top: 13px;
-		margin-right: 10px;
-	}
-
-	.starImg-sabtNazar {
-		width: 20px;
-	}
-
-	.p-sabtNazar {
-		color: #bdbdbd;
-	}
-
-	.span-sabtNazar {
-		color: black;
-	}
-
-	.boxDiv-sabtNazar input {
-		border-radius: 5px;
-		box-shadow: 2px 2px 10px 2px #b4b2b2;
-		border: none;
-		height: 30px;
-	}
-
-	.nazarShomaText {
-		height: 80px;
-	}
-	.sendBut-sabtNazar {
-		background-color: #da9e3f;
-		color: white;
-		font-weight: bold;
-		box-shadow: none;
-		margin-top: 20px;
-	}
 }
 
-/* *******************end nazar shoma page ************** */
 /* desktop */
 @media screen and (min-width: 900px) {
 	body {
@@ -2837,14 +2836,8 @@ input:hover {
 		display: block;
 	}
 
-	.parent-successfull {
-		background-image: url('imgs/LW002[1].png');
-		background-size: cover;
-		background-repeat: no-repeat;
-	}
-
 	.input-success {
-		width: 30%;
+		width: 100%;
 	}
 	.section-intro-ScorllHsPages > article {
 		height: 30%;
@@ -2921,15 +2914,8 @@ input:hover {
 		display: block;
 	}
 
-	.parent-successfull {
-		background-image: url('pic/2.png');
-		background-size: cover;
-		background-repeat: no-repeat;
-		/*		align-content: flex-start;*/
-	}
-
 	.input-success {
-		width: 25%;
+		width: 100%;
 	}
 	/**************** PAGES SCORLL START */
 	.parent-filter-menu {
@@ -3130,4 +3116,51 @@ input:hover {
 		right: 60px;
 		width: 180px;
 	}
+}
+
+/* succces page */
+
+.parent-successfull {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.input-success {
+	width: 100%;
+	height: 47px;
+	display: flex;
+	margin-top: 20px;
+	border-radius: 8px;
+	border: none;
+	box-shadow: 2px 2px 10px 2px #c0c0c0;
+}
+
+.azmun-text {
+	flex-grow: 1;
+	align-self: flex-start;
+}
+
+.img-successfull {
+	width: 30px;
+	height: 30px;
+}
+
+.azmun-success {
+	width: 50%;
+	margin-top: 20px;
+}
+
+.input-success {
+	padding: 5px;
+}
+.azmun-text {
+	font-weight: bold;
+	margin: 5px 5px 5px 0px;
+}
+
+.input-success p:nth-of-type(2) {
+	text-align: left;
+	margin-left: 15px;
 }
