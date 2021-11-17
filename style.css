@@ -331,31 +331,28 @@ li {
 /****************************  END MAIN MENU
 /* /* start error 404 page */
 
-
-.parent-errorpage{
+.parent-errorpage {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	gap: 20px;
 }
 
-.headImg-errorpage{
+.headImg-errorpage {
 	width: 80%;
 	align-self: center;
 	margin-top: 20%;
-	
 }
-.but-errorpage{
+.but-errorpage {
 	display: flex;
 	justify-content: center;
 }
-.searchButton-errorpage{
-	
+.searchButton-errorpage {
 	background-color: #da9e3f;
 	border-radius: 10px;
 	padding: 5px;
 }
-.searchText-errorpage{
+.searchText-errorpage {
 	width: 70%;
 	border-radius: 10px;
 	background-color: #ebeed9;
@@ -363,23 +360,18 @@ li {
 	direction: ltr;
 }
 
-
-.back-errorpage{
-	background-color:  #da9e3f;
+.back-errorpage {
+	background-color: #da9e3f;
 	border-radius: 10px;
 	width: 82%;
 	align-self: center;
 	height: 30px;
 	border: none;
 	color: white;
-	
-	
 }
 
-
-
-
-/* end error 404 page */ */
+/* end error 404 page */
+*/
 
 /*****************************START page fail
 
@@ -395,59 +387,44 @@ li {
 
 /*......start of success-input......*/
 
-.parent-successfull{
-	
+.parent-successfull {
 	text-align: center;
 	width: 100%;
 	height: 80vh;
 	display: flex;
 	flex-direction: column;
-	gap:30px;
+	gap: 30px;
 	padding-top: 20px;
-
 }
-.azmun-success{
+.azmun-success {
 	display: flex;
 	flex-direction: column;
-	gap:15px;
-	
+	gap: 15px;
 }
 
-.input-success{
-	
-	
-	width:75%;
+.input-success {
+	width: 75%;
 	height: 47px;
 	display: flex;
 	align-self: center;
-	gap:10px;
+	gap: 10px;
 	justify-content: flex-start;
 	border-radius: 8px;
-	border:none;
+	border: none;
 	box-shadow: 2px 2px 10px 2px #c0c0c0;
-
 }
 
-.azmun-text{
-	
+.azmun-text {
 	flex-grow: 1;
 	align-self: flex-start;
 }
 
-	
-.img-successfull{
+.img-successfull {
 	width: 30px;
 	height: 30px;
 }
 
-
 /*......end of success-input......*/
-
-
-
-
-
-
 
 /* ***********************end page fail */
 /**************************************** START SWIPER SECTION */
@@ -2234,7 +2211,6 @@ input:hover {
 	margin-top: 2px;
 }
 .parent-check-box-filter {
-	
 	margin-top: 50px;
 }
 
@@ -2277,16 +2253,43 @@ input:hover {
 	margin-right: 5px;
 }
 .parent-p-filter span i {
-	color:#cf750e;
+	color: #cf750e;
 }
+
+.amozesh-free-text-filter {
+	width: 100%;
+	text-align: center;
+}
+.amozesh-free-text-filter > p {
+	font-weight: bold;
+}
+.btn-b32.amozesh-btn-page {
+	direction: rtl;
+}
+
+.amozesh-btn-page > a > p {
+	width: 100%;
+}
+
+.TEXT-AMOZESH-BOX {
+	width: 100%;
+	text-align: center;
+	background-color:#5c5b5b86;
+	color:rgb(248, 248, 248);
+	font-weight: bold;
+	position: absolute;
+	bottom: 45px;
+	font-size: 15px;
+}
+
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
 	.social-media-swiper {
 		display: none;
 	}
-	.parent-successfull{
-		background-color: #FFFFFF;
+	.parent-successfull {
+		background-color: #ffffff;
 	}
 	.sabd-kharid-section-box form {
 		display: flex;
@@ -2343,17 +2346,16 @@ input:hover {
 	body {
 		background-color: green;
 	}
-	
-	.headImg-errorpage{
+
+	.headImg-errorpage {
 		width: 50%;
 		margin-top: 12%;
 	}
 
-	.searchText-errorpage{
+	.searchText-errorpage {
 		width: 45%;
 	}
-	.back-errorpage{
-		
+	.back-errorpage {
 		width: 30%;
 	}
 	.sabd-kharid-section-box form {
@@ -2418,38 +2420,37 @@ input:hover {
 	body {
 		background-color: pink;
 	}
-	.headImg-errorpage{
+	.headImg-errorpage {
 		width: 55%;
 		margin-top: 15%;
 	}
 
-	.searchText-errorpage{
+	.searchText-errorpage {
 		width: 50%;
 	}
-	.back-errorpage{
-		
+	.back-errorpage {
 		width: 30%;
 	}
-	.parent-sabtNazar{
-		margin-top: 8%;}
-		}
-		.boxDiv-sabtNazar{
-			width: 40%;
-		}
-	.user-name-successfull{
+	.parent-sabtNazar {
+		margin-top: 8%;
+	}
+
+	.boxDiv-sabtNazar {
+		width: 40%;
+	}
+	.user-name-successfull {
 		display: block;
 	}
-	
-	.parent-successfull{
-		background-image: url("pic/2.png");
+
+	.parent-successfull {
+		background-image: url('pic/2.png');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	
-	.input-success{
-		width:30%;
-		
-}
+
+	.input-success {
+		width: 30%;
+	}
 	/* PAGE SCORLL  */
 
 	.RowProject {
@@ -2739,76 +2740,69 @@ input:hover {
 		width: 600px;
 	}
 
-/********************* start nazar shoma page************ */
+	/********************* start nazar shoma page************ */
 
-.parent-sabtNazar{
-	margin-top: 15%;
-	display: grid;
-	justify-content: center;
-	flex-direction: column;
-	background-color: white;
-	box-shadow: 2px 2px 10px 2px #B4B2B2;
-	border-radius: 5px;
-	width: 305px;
-	margin-right: auto;
-	margin-left: auto;
-}
-.crossSign-sabtNazar{
-	width: 15px;
-}
-.boxDiv-sabtNazar{
-	display: grid;
-	justify-content: center;
-	flex-direction: column;
-	width: 100%;
-	height: 380px;
-		
-}
+	.parent-sabtNazar {
+		margin-top: 15%;
+		display: grid;
+		justify-content: center;
+		flex-direction: column;
+		background-color: white;
+		box-shadow: 2px 2px 10px 2px #b4b2b2;
+		border-radius: 5px;
+		width: 305px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.crossSign-sabtNazar {
+		width: 15px;
+	}
+	.boxDiv-sabtNazar {
+		display: grid;
+		justify-content: center;
+		flex-direction: column;
+		width: 100%;
+		height: 380px;
+	}
 
-.star-sabtNazar{	
-	display: flex;
-}
+	.star-sabtNazar {
+		display: flex;
+	}
 
+	.starDiv-sabtNazar {
+		margin-top: 13px;
+		margin-right: 10px;
+	}
 
-.starDiv-sabtNazar{
-	margin-top: 13px;
-	margin-right: 10px;	
-}
+	.starImg-sabtNazar {
+		width: 20px;
+	}
 
-.starImg-sabtNazar{
-	width: 20px;
-}
+	.p-sabtNazar {
+		color: #bdbdbd;
+	}
 
+	.span-sabtNazar {
+		color: black;
+	}
 
- .p-sabtNazar{
-	color: #bdbdbd;
-}
+	.boxDiv-sabtNazar input {
+		border-radius: 5px;
+		box-shadow: 2px 2px 10px 2px #b4b2b2;
+		border: none;
+		height: 30px;
+	}
 
-
-
-.span-sabtNazar{
-	
-	color: black;
-}
-
-
-.boxDiv-sabtNazar input{
-	border-radius: 5px;
-	box-shadow: 2px 2px 10px 2px #B4B2B2;
-	border: none;
-	height: 30px;
-	
-}
-
-.nazarShomaText{
-	height: 80px;
-}
-.sendBut-sabtNazar{
-	background-color: #da9e3f;
-	color: white;
-	font-weight: bold;
-	box-shadow:none;
-	margin-top: 20px;
+	.nazarShomaText {
+		height: 80px;
+	}
+	.sendBut-sabtNazar {
+		background-color: #da9e3f;
+		color: white;
+		font-weight: bold;
+		box-shadow: none;
+		margin-top: 20px;
+	}
 }
 
 /* *******************end nazar shoma page ************** */
@@ -2817,35 +2811,33 @@ input:hover {
 	body {
 		background-color: gray;
 	}
-	.headImg-errorpage{
+	.headImg-errorpage {
 		width: 50%;
 		margin-top: 12%;
 	}
 
-	.searchText-errorpage{
+	.searchText-errorpage {
 		width: 46%;
 	}
-	.back-errorpage{
-		
+	.back-errorpage {
 		width: 27%;
 	}
-	.boxDiv-sabtNazar{
+	.boxDiv-sabtNazar {
 		width: 300px;
 	}
-	.user-name-successfull{
+	.user-name-successfull {
 		display: block;
 	}
-	
-	.parent-successfull{
-		background-image: url( "imgs/LW002[1].png");
+
+	.parent-successfull {
+		background-image: url('imgs/LW002[1].png');
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
-	
-	.input-success{
-		width:30%;
-		
-}
+
+	.input-success {
+		width: 30%;
+	}
 	.section-intro-ScorllHsPages > article {
 		height: 30%;
 	}
@@ -2897,41 +2889,40 @@ input:hover {
 	body {
 		background-color: skyblue;
 	}
-	
-.headImg-errorpage{
-	width: 38%;
-	margin-top: 8%;
-}
 
-.searchText-errorpage{
-	width: 35%;
-}
-.back-errorpage{
-	
-	width: 20%;
-}
-	
-	.parent-sabtNazar{
-		margin-top: 6%;}
-		
-	.boxDiv-sabtNazar{
-			width: 300px;
-		}
-	.user-name-successfull{
+	.headImg-errorpage {
+		width: 38%;
+		margin-top: 8%;
+	}
+
+	.searchText-errorpage {
+		width: 35%;
+	}
+	.back-errorpage {
+		width: 20%;
+	}
+
+	.parent-sabtNazar {
+		margin-top: 6%;
+	}
+
+	.boxDiv-sabtNazar {
+		width: 300px;
+	}
+	.user-name-successfull {
 		display: block;
 	}
-	
-	.parent-successfull{
-		background-image: url( "pic/2.png");
+
+	.parent-successfull {
+		background-image: url('pic/2.png');
 		background-size: cover;
 		background-repeat: no-repeat;
-/*		align-content: flex-start;*/
+		/*		align-content: flex-start;*/
 	}
-	
-	.input-success{
-		width:25%;
-		
-}
+
+	.input-success {
+		width: 25%;
+	}
 	/**************** PAGES SCORLL START */
 	.parent-filter-menu {
 		left: 74px;

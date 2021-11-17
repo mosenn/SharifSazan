@@ -1,9 +1,4 @@
-// JavaScript Document
-
-	//////rang kardan setare ha
-		
-		
-	
+// JavaScript Documen
 	function colorStar1(){
 		
 		document.getElementById("star1").src="imgs/yellowstar.png";
