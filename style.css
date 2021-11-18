@@ -170,6 +170,60 @@ li {
 }
 /* end top menu responsive  */
 
+/********** start moshakhasat page */
+.moshakhasat-header-photo-parent{
+	width: 100%;
+}
+.moshakhasat-header-photo-parent figure img{
+	width: 100%;
+}
+.leftbox-moshakhasatdore{
+	border: solid;
+	border-radius: 10px;
+	padding: 20px;
+	font-weight: bold;
+}
+.namedars-moshakhasat{
+	padding: 10px;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+.btn-moshakhasat-sabadekharid{
+	border: solid;
+	background-color: var(--bg-btn);
+	margin-top: 10px;
+	width: 50%;
+	border-radius: 5px;
+	height: 40px;
+	
+}
+.btn-moshakhasat-sabadekharid a{
+color: white;
+}
+.img-parent-master-moshakhasat{
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	border: solid;
+}
+.img-parent-master-moshakhasat figure{
+	border: solid;
+	width: 30%;
+}
+.img-parent-master-moshakhasat figure img{
+	width: 100%;
+	border-radius: 100px;
+	border: solid;
+}
+.parent-article-moshakhasat{
+	display: grid;
+	gap: 40px;
+	border: solid;
+	padding: 30px;
+}
+/********* end moshakhasat page */
 /* start responsive menu show with btn */
 
 .parenet-res-menu-with-btn {
@@ -744,7 +798,15 @@ li {
 /***********************************************END KHADAMAT PAGE */
 
 /*********************************************** START DAVAT BE HAMKARI */
-
+.section-one-davat{
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.section-one-davat figure{
+	width: 70%;
+}
 .section-one-davat figure img {
 	width: 100%;
 }
@@ -2490,6 +2552,32 @@ input:hover {
 	body {
 		background-color: pink;
 	}
+	
+	.parent-article-moshakhasat{
+		display: grid;
+		grid-template-columns: 60% 35%;
+		gap: 10px;
+		border: solid;
+	}
+	.article-pages-a{
+		width: 75%;
+	}
+	.section-one-davat{
+		
+		width: 25%;
+		padding: 10px;
+	}
+	.section-one-davat figure{
+		width: 100%;
+		
+		height: 100%;
+	}
+	.section-one-davat figure img {
+		width: 100%;
+		border: solid;
+		height: 100%;
+		object-fit: cover;
+	}
 
 	.parent-sabtNazar {
 		margin-top: 8%;
@@ -2755,16 +2843,7 @@ input:hover {
 	.parent-img-and-text-davat {
 		flex-direction: row;
 	}
-	.section-one-davat {
-		display: flex;
-		align-items: center;
-	}
-
-	.section-one-davat figure img {
-		width: 300px;
-		height: 200px;
-		padding: 14px;
-	}
+	
 	/* **********start panel karbari */
 
 	.parent-parent-panel {
@@ -2889,6 +2968,25 @@ input:hover {
 @media screen and (min-width: 1024px) {
 	body {
 		background-color: skyblue;
+	}
+	.article-pages-a{
+		width: 80%;
+	}
+	.section-one-davat{
+		
+		width: 20%;
+		padding: 10px;
+	}
+	.section-one-davat figure{
+		width: 100%;
+		
+		height: 100%;
+	}
+	.section-one-davat figure img {
+		width: 100%;
+		border: solid;
+		height: 100%;
+		object-fit: cover;
 	}
 
 	.headImg-errorpage {
