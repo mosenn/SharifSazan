@@ -1819,7 +1819,7 @@ input:hover {
 	position: absolute;
 	font-size: 1rem;
 	font-weight: bold;
-	background: rgba(128, 48, 48, 0.39);
+	background: rgba(53, 52, 52, 0.781);
 	width: 149px;
 	height: 1px;
 	top: 10px;
@@ -2238,11 +2238,15 @@ input:hover {
 .btn-b32.amozesh-btn-page {
 	direction: rtl;
 }
-
+.btn-b32.amozesh-btn-page.amozesh-fixed-width {
+	width: 88%;
+}
 .amozesh-btn-page > a > p {
 	width: 100%;
 }
-
+.TEXT-AMOZESH-BOX.amozesh-fixed-width {
+	width: 88%;
+}
 .TEXT-AMOZESH-BOX {
 	width: 100%;
 	text-align: center;
@@ -2253,6 +2257,42 @@ input:hover {
 	bottom: 45px;
 	font-size: 15px;
 }
+
+#serchfilteramozeshinp {
+	width: 1%;
+	border-radius: 5px;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s;
+}
+.form-serch-filter-amozesh {
+	
+	position: relative;
+}
+#serchfilteramozeshinp.showSerchInputFilterAmozeshpage {
+	width: 100%;
+	border-radius: 5px;
+	opacity: 1;
+	visibility: visible;
+}
+
+.parenet-icon-serch-filter-amozesh {
+	position: absolute;
+
+	padding: 3px;
+	width: 30px;
+	text-align: center;
+	color: #fff;
+	margin-right: 5px;
+	bottom: 6px;
+	background-color: var(--cD1A041);
+	border-radius: 5px 0px 5px 0px;
+}
+#serchfilteramozeshinp::placeholder {
+	text-align: center;
+	font-weight: bold;
+}
+
 .toggel {
 	cursor: pointer;
 }
@@ -2551,7 +2591,9 @@ input:hover {
 	body {
 		background-color: green;
 	}
-
+	.parente-same-project-storypage figure img {
+		width: 30%;
+	}
 	.headImg-errorpage {
 		width: 50%;
 		margin-top: 12%;
@@ -3102,8 +3144,7 @@ input:hover {
 	}
 	.parente-same-project-storypage figure img {
 		margin: 15px;
-		width: 23%;
-		
+		width: 20%;
 	}
 	.headImg-errorpage {
 		width: 38%;
