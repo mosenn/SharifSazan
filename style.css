@@ -1621,15 +1621,18 @@ input:hover {
 	height: 100vh;
 }
 
-.main-scorllsHorinzentalPages::-webkit-scrollbar {
+.main-scorllsHorinzentalPages::-webkit-scrollbar,
+.main-story-page::-webkit-scrollbar {
 	width: 100px;
 }
 
-.main-scorllsHorinzentalPages::-webkit-scrollbar-track {
+.main-scorllsHorinzentalPages::-webkit-scrollbar-track,
+.main-story-page::-webkit-scrollbar-track {
 	background: rgb(207, 206, 203);
 }
 
-.main-scorllsHorinzentalPages::-webkit-scrollbar-thumb {
+.main-scorllsHorinzentalPages::-webkit-scrollbar-thumb,
+.main-story-page::-webkit-scrollbar-thumb {
 	background-color: var(--cD1A041);
 	border-radius: 20px;
 	border: 5px solid rgb(207, 206, 203);
@@ -2257,38 +2260,6 @@ input:hover {
 	cursor: pointer;
 }
 
-/****************************** start story page */
-
-.story-ul {
-	border: 1px solid red;
-	display: flex;
-	flex-direction: column;
-
-	align-items: flex-end;
-}
-
-.story-ul li {
-	margin-right: 20px;
-	font-weight: bold;
-	color: #757575;
-	font-size: 12px;
-	padding: 5px;
-}
-.figcaption-img-story-project {
-	text-align: center;
-	width: 100%;
-	color: #ffff;
-	position: absolute;
-	font-size: 15px;
-	font-weight: bold;
-	background-color: rgba(42, 42, 42, 0.698);
-	bottom: 0px;
-}
-
-.figcaption-img-story-project > p {
-	margin-left: 25px;
-}
-
 /********************* START PAGE NAZARAT************ */
 
 .parent-sabtNazar {
@@ -2353,6 +2324,170 @@ input:hover {
 	margin-top: 20px;
 }
 /********************* END PAGE NAZARAT ************ */
+
+/******************************* START STORY PAGE    */
+.story-section.story-sec-three {
+	background-color: #e4e4e4a8;
+	width: 100%;
+	min-width: 60%;
+}
+.title-story-sec-three {
+	text-align: center;
+	margin: 5px 0px 5px 0px;
+}
+.parente-same-project-storypage {
+	border: 1px solid green;
+}
+.parente-same-project-storypage figure {
+	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+
+	align-items: center;
+}
+.parente-same-project-storypage figure img {
+	width: 42%;
+	margin-top: 5px;
+	text-align: center;
+	object-fit: cover;
+}
+.main-story-page {
+	display: flex;
+	border: 1px solid red;
+	width: 100vw;
+	height: 100vh;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.story-section {
+	min-width: 100vw;
+	height: 100vh;
+	border: 3px solid blue;
+}
+
+.story-sec-one {
+	display: flex;
+	justify-content: center;
+}
+
+.story-sec-one > div {
+	border: 1px solid green;
+	width: 100%;
+	/* display: flex; */
+}
+
+.story-sec-one > div > figure {
+	border: 1px solid purple;
+}
+
+.story-sec-one > div > figure > p {
+	border: 1px solid red;
+	text-align: center;
+	font-weight: bold;
+	color: #5e5e5e;
+	margin-left: 30px;
+	background-color: #fff;
+}
+
+.story-sec-one > div > figure {
+	background: url(imgs/homeKozekanani.png) no-repeat center;
+	background-size: cover;
+	height: 50%;
+}
+
+.story-sec-one > div > nav {
+	height: 100%;
+	border: 3px solid rgb(125, 114, 187);
+}
+
+.story-sec-one > div > nav > ul {
+	border: 3px solid black;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.story-sec-one > div > nav > ul > li {
+	margin-right: 10px;
+	padding: 4px;
+	font-weight: bold;
+	color: #5e5e5e;
+	font-size: 0.9rem;
+}
+
+.ul-title-story {
+	border: 1px solid red;
+	text-align: right;
+}
+
+.ul-title-story > p {
+	color: #5e5e5e;
+	font-weight: bold;
+	margin-right: 10px;
+}
+
+.story-banner > h6 {
+	font-size: 20px;
+}
+
+/* section two start  */
+.story-sec-two {
+	border: 1px solid rgb(22, 195, 201);
+	display: flex;
+
+	flex-direction: column;
+}
+
+.all-figure-story-page {
+	border: 2px solid gray;
+	display: flex;
+	justify-content: center;
+}
+
+.story-sec-two > .all-figure-story-page > figure {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: fit-content;
+	border: 1px solid rgb(134, 34, 138);
+	margin-top: 20px;
+	width: 37%;
+}
+
+.story-sec-two > .all-figure-story-page > figure > img {
+	margin-top: 5px;
+	margin-left: 5px;
+	object-fit: cover;
+	width: 90px;
+	height: 50px;
+}
+
+.story-sec-two > figure:nth-of-type(1) {
+	margin-left: 0px;
+}
+
+.story-sec-two > figure:nth-of-type(2) img {
+	height: 77px;
+}
+
+.title-img-sec-two-story > p {
+	font-size: 15px;
+	margin-left: 5px;
+}
+
+.all-figure-story-page {
+	display: flex;
+}
+
+.articel-story-page {
+	text-align: right;
+	font-size: 15px;
+	border: 1px solid green;
+}
+
+/*************************************** STORY PAGE END  */
 
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
@@ -2489,6 +2624,71 @@ input:hover {
 @media screen and (min-width: 768px) {
 	body {
 		background-color: pink;
+	}
+
+	.parente-same-project-storypage figure img {
+		width: 22%;
+	}
+	.section-bannerScorllHSpages.story-banner-parent {
+		background: #000;
+		min-width: 6%;
+	}
+	.banner-sc-PageH.story-banner {
+		border: 1px solid red;
+		/* width: 42%; */
+		width: 100%;
+	}
+	.story-sec-two > .all-figure-story-page > figure {
+		border: 1px SOLID YELLOW;
+	}
+
+	.story-sec-two > .all-figure-story-page > figure > img {
+		height: unset;
+	}
+	.story-section.story-sec-two {
+		flex-direction: row;
+	}
+	.all-figure-story-page {
+		width: 100%;
+		border: 4px solid rgb(68, 67, 67);
+	}
+	.articel-story-page p {
+		text-align: center;
+		padding: 15px;
+		border: 3px solid purple;
+	}
+	.parent-article-story-page {
+		width: 100%;
+	}
+	.articel-story-page {
+		display: flex;
+		flex-direction: column;
+
+		height: 100%;
+
+		border: 4px solid black;
+	}
+
+	.story-sec-one > div > nav {
+		width: 50%;
+	}
+	.ul-title-story {
+		text-align: center;
+	}
+	.story-sec-one > div > nav > ul {
+		height: 100vh;
+		justify-content: center;
+		align-items: center;
+	}
+	.story-sec-one > div > figure {
+		background: url(imgs/homeKozekanani.png) no-repeat center;
+		background-size: cover;
+		height: 100%;
+		width: 50%;
+	}
+	.story-sec-one > div {
+		display: flex;
+		width: 100vw;
 	}
 
 	.parent-sabtNazar {
@@ -2890,7 +3090,21 @@ input:hover {
 	body {
 		background-color: skyblue;
 	}
-
+	.story-section.story-sec-three {
+		min-width: 30%;
+	}
+	.parente-same-project-storypage {
+		width: 100%;
+	}
+	.parente-same-project-storypage figure {
+		width: 100%;
+		height: 100vh;
+	}
+	.parente-same-project-storypage figure img {
+		margin: 15px;
+		width: 23%;
+		
+	}
 	.headImg-errorpage {
 		width: 38%;
 		margin-top: 8%;
@@ -3118,7 +3332,7 @@ input:hover {
 	}
 }
 
-/* succces page */
+/******************************** start succces page **********/
 
 .parent-successfull {
 	display: flex;

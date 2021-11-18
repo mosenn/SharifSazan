@@ -1,33 +1,27 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+        <title>Document</title>
         <link rel="stylesheet" href="style.css">
-        <title>Story</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
 
-
-        <style>
-            * {
-
-                direction: ltr;
-            }
-
-            body {
-
-                direction: ltr;
-            }
-
-        </style>
     </head>
 
+    <style>
+        body {
+            overflow-y: hidden;
+        }
+
+    </style>
 
     <body>
-        <main class="main-scorllsHorinzentalPages">
+
+        <main class="main-story-page">
+
 
             <!-- start left banner sharifsazan and menu  -->
             <div class="MenuPagesHS">
@@ -40,13 +34,19 @@
                         <p>منو</p>
                     </div>
                     <div class="parent-btn-menu-pagesHS">
+                        <button class="filter-menu">
+                            <i class="fas fa-poll-h"></i>
+                        </button>
+                        <p>فیلتر ها</p>
                         <button>
                             <i class="fas fa-arrow-left"></i>
                         </button>
                         <p>بازگشت</p>
 
                     </div>
+
                 </div>
+
 
                 <figure class="menu-img-team-ma">
                     <img src="imgs/sharif.png" alt="">
@@ -66,7 +66,7 @@
                 <!-- start parent img -->
                 <div class="parent-img-menupagsc">
                     <figure>
-                        <img src="imgs/3PERSONAL.png" alt="">
+                        <img src="imgs/project1.png" alt="">
                         <figcaption>پروین صادقی</figcaption>
                     </figure>
                 </div>
@@ -188,41 +188,125 @@
             </menu>
             <!-- end Menu  -->
 
-            <!-- end left banner sharifsazan and menu  -->
+            <!-- start filter  -->
 
-
-            <!-- start intro section -->
-            <section class="section-intro-ScorllHsPages story-section" >
-                <figure>
-                    <img src="imgs/1-TEAM.jpg" alt="">
-                    <figcaption class="figcaption-img-story-project">
-                        <p>خانه کوزه کنانی</p>
-                    </figcaption>
-                </figure>
-                <div class="title-team-ma">
-                    <p>مشخصات پروژه</p>
+            <div class="parent-filter-menu">
+                <div class="filter-parnet-btn">
+                    <button class="close-btn-filter">X</button>
                 </div>
-                <nav>
-                    <ul class="story-ul">
-                        <li>
-                            نوع پروژه مجتمع مسکونی
-                        </li>
-                        <li>
-                            سال طراحی : 1390
-                        </li>
-                        <li>تعداد طبقه 18</li>
-                        <li>مکان: تهران</li>
-                        <li>نام مشتری : اقای کوزه کنانی</li>
-                        <li>مساحت : 640 متر مربع</li>
-                    </ul>
-                </nav>
 
+
+                <div class="parent-check-box-filter">
+                    <div class="parent-p-filter">
+                        <p>
+                            <span><i class="fas fa-sort-amount-up"></i>
+                            </span>
+                            نوع
+
+
+                        </p>
+                    </div>
+                    <form action="#">
+
+                        <label for="">مجتمع ساختمانی</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">مجتمع صعنتی</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">پل و تقاطع غیر مسطح</label>
+                        <input type="checkbox">
+                    </form>
+
+                    <div class="line-filter"></div>
+
+                    <div class="parent-p-filter">
+                        <p>
+                            <span><i class="fas fa-shapes"></i></span>
+                            مفهوم
+
+                        </p>
+                    </div>
+                    <form action="#">
+
+                        <label for="">تکمیل شد</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">در حال پیشرفت</label>
+                        <input type="checkbox">
+                    </form>
+
+
+                    <div class="line-filter"></div>
+                    <div class="parent-p-filter">
+                        <p>
+                            <span><i class="fas fa-bars"></i></span>
+                            مرتب سازی
+
+                        </p>
+
+                    </div>
+
+                    <form action="#">
+
+                        <label for="">پیش فرض</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">مقیاس منطقه</label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">سال </label>
+                        <input type="checkbox">
+                    </form>
+                    <form action="#">
+                        <label for="">متراژ پروژه </label>
+                        <input type="checkbox">
+                    </form>
+
+                    <form action="#">
+                        <label for="">ارتفاع </label>
+                        <input type="checkbox">
+                    </form>
+
+                </div>
+
+
+            </div>
+
+            <!-- end filter -->
+
+
+            <section class="story-section story-sec-one">
+                <div>
+                    <figure>
+                        <p>خانه مسکونی کوزه کنانی</p>
+                    </figure>
+
+                    <nav>
+                        <div class="ul-title-story">
+                            <p>مشخصات پروژه</p>
+                        </div>
+                        <ul>
+                            <li>نوع پروژه : مجتمع مسکونی</li>
+                            <li>سال طراحی : 1390</li>
+                            <li>تعداد طبقه : 18</li>
+                            <li>مکان: تهران</li>
+                            <li>نام مشتری : اقای کوزه کنانی</li>
+                            <li>مساحت: 640 متر مربع</li>
+                        </ul>
+                    </nav>
+                </div>
             </section>
-            <!-- end intro section -->
+
 
             <!-- start banner  -->
-            <section class="section-bannerScorllHSpages">
-                <div class="banner-sc-PageH">
+            <section class="section-bannerScorllHSpages story-banner-parent">
+                <div class="banner-sc-PageH story-banner">
 
                     <h6>مراحل</h6>
 
@@ -231,308 +315,91 @@
             </section>
             <!-- end banner  -->
 
-            <!--leader section img start  -->
-            <section class="one-imgSCHPages">
-                <figure>
-                    <img src="imgs/5LEADER.jpg" alt="" id='leaderimg'>
+            <section class="story-section story-sec-two">
 
-                    <figcaption>
-
-                        <div class="text-figcaptionPagesScH">
-                            <p>الهام علیزاده</p>
-                            <p>طراح سازه</p>
-
-                            <p>کار شناسی</p>
-                            <p>زیبا</p>
+                <div class="all-figure-story-page">
+                    <figure>
+                        <div class="title-img-sec-two-story">
+                            <p>تصاویر اجرایی</p>
                         </div>
+                        <img src="imgs/2story.png" alt="">
+                        <img src="imgs/2story.png" alt="">
+                        <img src="imgs/2story.png" alt="">
+                        <div>
+                            <p>
+                                <a href="#">
+                                    دیدن همه
+                                    <i class="fas fa-arrow-right"></i>
 
-                    </figcaption>
-
-                </figure>
-            </section>
-            <!--leader section img end  -->
-
-            <!-- start RowsImgsPageScH imgs have four imgs -->
-            <section class="RowsImgsPageScH">
-                <!-- wrapper one  -->
-                <div class="wrapper-RowsImgs-PageScH">
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
+                                </a>
+                            </p>
+                        </div>
                     </figure>
                     <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
+                        <div class="title-img-sec-two-story">
+                            <p>landscape</p>
+                        </div>
+                        <img src="imgs/1story.png" alt="">
+                        <img src="imgs/1story.png" alt="">
+                        <div>
+                            <p>
 
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
+                                <a href="#">دیدن همه</a>
+                                <i class="fas fa-arrow-right"></i>
 
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                </div>
-                <!-- wrapper two  -->
-                <div class="wrapper-RowsImgs-PageScH">
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
+                            </p>
+                        </div>
                     </figure>
                 </div>
 
 
-            </section>
-            <!-- end  RowsImgsPageScH imgs have four imgs -->
-
-            <!-- start banner  -->
-            <section class="section-bannerScorllHSpages">
-                <div class="banner-sc-PageH title-hamkaran">
-
-                    <h6>همکاران گذشته</h6>
-
-
+                <div class="parent-article-story-page">
+                    <article class="articel-story-page">
+                        <p>
+                            داستان پروژه
+                        </p>
+                        <p>
+                            .با اختلاق سطح در کنار یکدیگر قرار داده شوند
+                            ,تلاش داشته تا همسو با این شیب
+                            فضاهایی میباشد
+                            با توجه به شیب محسوس زمین
+                            طراح های سبز زنگ بوده و پوشش بام ساختمان شیبدار
+                            و همچنین پنجره های فلزی با دست اندازه و نرده
+                            اجر و اندود سیمان بر روی المان های سازه اجرایی
+                            .و در زمینی جنوبی ساخته شده است
+                            .پوشش نما است
+                            ساختمان در دو واحد مسکونی در دو طبقه در خیبان جهان ارا و منتطقه یوسف اباد واقع ساختمان
+                            مسکونی کوزه کنانی
+                        </p>
+                    </article>
                 </div>
             </section>
-            <!-- end banner  -->
 
-            <!-- start personal imgs have three imgs -->
-            <section class="RowsImgsPageScH">
-
-                <!-- wrapper one  -->
-                <div class="wrapper-RowsImgs-PageScH">
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="" class="personalimg">
-                        </a>
-                        <figcaption class="personalimg">
-
-                            <div class="text-figcaptionPagesScH ">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="" class="personalimg">
-                        </a>
-                        <figcaption class="personalimg">
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="" class="personalimg">
-                        </a>
-                        <figcaption class="personalimg">
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-
+            <section class="story-section story-sec-three">
+                <div class="title-story-sec-three">
+                    <p>پروژه های مشابه</p>
                 </div>
+                <div class="parente-same-project-storypage">
 
-
-                <!-- wrapper two  -->
-                <div class="wrapper-RowsImgs-PageScH">
                     <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="" class="personalimg">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
+                        <img src="imgs/project1.png" alt="">
+                        <img src="imgs/project1.png" alt="">
+                        <img src="imgs/project1.png" alt="">
+                        <img src="imgs/project1.png" alt="">
                     </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
 
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
-                    <figure>
-                        <a href="#">
-                            <img src="imgs/3PERSONAL.png" alt="">
-                        </a>
-                        <figcaption>
-
-                            <div class="text-figcaptionPagesScH">
-                                <p>الهام علیزاده</p>
-                                <p>طراح سازه</p>
-
-                                <p>کار شناسی</p>
-                                <p>زیبا</p>
-                            </div>
-
-                        </figcaption>
-
-                    </figure>
 
                 </div>
 
             </section>
-            <!-- end personal imgs have three imgs -->
+
+
+
         </main>
+
+        <script src="storypage.js"></script>
+        <script src="menuPageScorllhorizontal.js"></script>
+        <script src="menuwithfilter.js"></script>
     </body>
-    <script src="menuPageScorllhorizontal.js"></script>
-    <script src="ScorllHorizontallPages.js"></script>
 
 </html>
