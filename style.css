@@ -1655,10 +1655,12 @@ input:hover {
 	width: 100%;
 }
 .leftbox-moshakhasatdore {
+	border: 1px solid rgb(100, 100, 100);
 	border-radius: 10px;
 	padding: 15px;
 	font-weight: bold;
 	margin: 20px;
+	margin-left: 25px;
 	grid-area: 2 / 1 / span 2 / span 1;
 	height: fit-content;
 }
@@ -1670,25 +1672,30 @@ input:hover {
 	flex-direction: column;
 }
 .btn-moshakhasat-sabadekharid {
-	border: solid;
 	background-color: var(--bg-btn);
 	margin-top: 10px;
 	width: 50%;
 	border-radius: 5px;
 	height: 40px;
+	outline: none;
+
+	cursor: pointer;
 }
+
 .btn-moshakhasat-sabadekharid a {
 	color: white;
+
+	width: 100%;
+	height: fit-content;
+	display: inline-block;
 }
 .img-parent-master-moshakhasat {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	margin-top: 10px;
-	border: solid;
 }
 .img-parent-master-moshakhasat figure {
-	border: solid;
 	width: 30%;
 }
 .article-moshakhasat {
@@ -1719,6 +1726,7 @@ input:hover {
 }
 .parent-btn-moshakhasat-sabadekharid {
 	display: flex;
+
 	justify-content: center;
 }
 /* end moshakhasat page */
