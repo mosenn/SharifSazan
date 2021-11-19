@@ -9,7 +9,19 @@
 body {
 	font-family: iranL;
 }
-
+  #myChart {
+            border: 1px solid red;
+            /* width:100% !important; */
+            height: 450px;
+			
+			
+        }
+.parent-chart-moshakhasat{
+	margin-top: 30px;
+	width: 95% ;
+	margin-right: 10px;
+	
+}
 /************************************************* ANIMATION BTN HOMPAGE */
 
 .parenet-swiper-btn {
@@ -1608,7 +1620,53 @@ input:hover {
 .right-side {
 	height: 100vh;
 }
+/* END ALL PAGE FROM STYLE HERE  */
+/* start moshakhasat page */
+.nazarat-sherkatkonandegan-moshakhasat form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+.nazarat-sherkatkonandegan-moshakhasat form select{
+	border-radius: 5px;
+	height: 40px;
+	
+}
+.parent-nazaratform-moshakhasat h4{
+	margin-top: 10px;
+	padding: 20px;
 
+}
+.parent-nazaratform-moshakhasat{
+	height: 700px;
+	border: solid;
+	margin-top: 50px;
+	
+}
+.nazarat-sherkatkonandegan-moshakhasat form select {
+
+}
+.title-nazarat-moshakhasat{
+	text-align: center;
+}
+.parent-nazarat-moshakhasat{
+	margin-top: 60px;
+}
+.videopart-moshakhasat{
+	display: grid;
+	grid-template-rows: 100%;
+	grid-template-columns:50% 50%;
+	grid-gap: 10px;
+	margin-top: 20px;
+	width: 100%;
+	margin: 25px;
+}
+.videopart-moshakhasat img{
+	
+	width: 70%;
+	box-shadow: 2px 2px 10px 2px #b4b2b2;
+	border-radius: 10px;
+}
 .moshakhasat-header-photo-parent {
 	width: 100%;
 }
@@ -1618,13 +1676,17 @@ input:hover {
 .leftbox-moshakhasatdore {
 	border: solid;
 	border-radius: 10px;
-	padding: 20px;
+	padding: 15px;
 	font-weight: bold;
+	margin:20px;
+	grid-area: 2 / 1 /span 2 /span 1;
+	height: fit-content;
+}
+.leftbox-moshakhasatdore p{
+	padding-top: 20px;
 }
 .namedars-moshakhasat {
-	padding: 10px;
 	display: flex;
-	gap: 20px;
 	flex-direction: column;
 }
 .btn-moshakhasat-sabadekharid {
@@ -1649,19 +1711,38 @@ input:hover {
 	border: solid;
 	width: 30%;
 }
+.article-moshakhasat{
+	margin-top: 20px;
+}
+.title-article-moshakhasat{
+	padding:20px;
+}
+.price-moshakhasat-boxleft{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 30px;
+}
+.price-moshakhasat-boxleft-style{
+	color: red;
+}
+
 .img-parent-master-moshakhasat figure img {
 	width: 100%;
 	border-radius: 100px;
 	border: solid;
+	display: flex;
+	justify-content: center;
 }
 .parent-article-moshakhasat {
 	display: grid;
-	gap: 40px;
 	border: solid;
 	padding: 30px;
 }
-
-/* END ALL PAGE FROM STYLE HERE  */
+.parent-btn-moshakhasat-sabadekharid{
+	display: flex;
+	justify-content: center;
+}
+/* end moshakhasat page */
 
 /*****************************************START ALL PAGES SCORLL STYLE */
 .main-scorllsHorinzentalPages {
@@ -2593,6 +2674,56 @@ input:hover {
 }
 /*************************************** STORY PAGE END  */
 
+/******************************** start succces page **********/
+
+.parent-successfull {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+.input-success {
+	width: 100%;
+	height: 47px;
+	display: flex;
+	margin-top: 20px;
+	border-radius: 8px;
+	border: none;
+	box-shadow: 2px 2px 10px 2px #c0c0c0;
+}
+
+.azmun-text {
+	flex-grow: 1;
+	align-self: flex-start;
+}
+
+.img-successfull {
+	width: 30px;
+	height: 30px;
+}
+
+.azmun-success {
+	width: 50%;
+	margin-top: 20px;
+}
+
+.input-success {
+	padding: 5px;
+}
+.azmun-text {
+	font-weight: bold;
+	margin: 5px 5px 5px 0px;
+}
+
+.input-success p:nth-of-type(2) {
+	text-align: left;
+	margin-left: 15px;
+}
+
+/******************************** end succces page **********/
+
+
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
@@ -2654,6 +2785,18 @@ input:hover {
 @media screen and (min-width: 577px) {
 	body {
 		background-color: green;
+	}
+	.namedars-moshakhasat p{
+		padding-top: 10px ;
+	}
+	.img-parent-master-moshakhasat figure {
+		width: 20%;
+	}
+	.img-parent-master-moshakhasat figure{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
 	}
 	.parente-same-project-storypage figure img {
 		width: 50%;
@@ -2731,6 +2874,29 @@ input:hover {
 	body {
 		background-color: pink;
 	}
+	.leftbox-moshakhasatdore{
+		grid-area: 1 / 2/span 2 /span 1;
+		position: sticky;
+	top: 50px;
+	}
+	.img-parent-master-moshakhasat figure{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.img-parent-master-moshakhasat figure {
+		width: 35%;
+
+	}
+	.btn-moshakhasat-sabadekharid{
+		width: 100%;
+	}
+	 .parent-article-moshakhasat {
+		grid-template-columns: 60% 40%;
+		padding: 0px;
+		padding-right: 10px;
+	} 
+	
 	.story-section.story-sec-three {
 		min-width: 30%;
 	}
@@ -3126,6 +3292,16 @@ input:hover {
 	body {
 		background-color: gray;
 	}
+	.videopart-moshakhasat img{
+		width: 60%;
+	}
+	.img-parent-master-moshakhasat figure {
+		width: 35%;
+	}
+	.parent-article-moshakhasat {
+		grid-template-columns: 65% 35%;
+		gap: 10px;
+	} 
 	.headImg-errorpage {
 		width: 50%;
 		margin-top: 12%;
@@ -3197,6 +3373,13 @@ input:hover {
 @media screen and (min-width: 1024px) {
 	body {
 		background-color: skyblue;
+	}
+	.videopart-moshakhasat img{
+		width: 45%;
+	}
+	.img-parent-master-moshakhasat figure {
+		width: 25%;
+
 	}
 	.story-section.story-sec-three {
 		min-width: 30%;
@@ -3438,51 +3621,4 @@ input:hover {
 		right: 60px;
 		width: 180px;
 	}
-}
-
-/******************************** start succces page **********/
-
-.parent-successfull {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 20px;
-}
-.input-success {
-	width: 100%;
-	height: 47px;
-	display: flex;
-	margin-top: 20px;
-	border-radius: 8px;
-	border: none;
-	box-shadow: 2px 2px 10px 2px #c0c0c0;
-}
-
-.azmun-text {
-	flex-grow: 1;
-	align-self: flex-start;
-}
-
-.img-successfull {
-	width: 30px;
-	height: 30px;
-}
-
-.azmun-success {
-	width: 50%;
-	margin-top: 20px;
-}
-
-.input-success {
-	padding: 5px;
-}
-.azmun-text {
-	font-weight: bold;
-	margin: 5px 5px 5px 0px;
-}
-
-.input-success p:nth-of-type(2) {
-	text-align: left;
-	margin-left: 15px;
 }
