@@ -9,18 +9,14 @@
 body {
 	font-family: iranL;
 }
-  #myChart {
-            border: 1px solid red;
-            /* width:100% !important; */
-            height: 450px;
-			
-			
-        }
-.parent-chart-moshakhasat{
+#myChart {
+	/* width:100% !important; */
+	height: 450px;
+}
+.parent-chart-moshakhasat {
 	margin-top: 30px;
-	width: 95% ;
+	width: 95%;
 	margin-right: 10px;
-	
 }
 /************************************************* ANIMATION BTN HOMPAGE */
 
@@ -225,10 +221,8 @@ li {
 }
 .ul-wrapper-toggel li {
 	border-bottom: 1px solid #eff0f1;
-
 	width: 100%;
 	padding: 10px;
-
 	font-size: 0.9rem;
 }
 
@@ -257,7 +251,6 @@ li {
 .nav-main-menu {
 	flex-basis: 100%;
 	display: flex;
-
 	background-color: var(--bg-main-menu);
 }
 .ul-main-menu {
@@ -283,7 +276,6 @@ li {
 	align-items: center;
 	justify-content: space-evenly;
 	background-color: var(--bg-main-menu);
-
 	display: flex;
 }
 .ul-icon-main li {
@@ -297,9 +289,7 @@ li {
 }
 .wrapper-user-icon {
 	left: 0px;
-
 	z-index: 99;
-
 	position: absolute;
 	display: none;
 }
@@ -473,7 +463,6 @@ li {
 .wrapper-btn-darkhast {
 	width: 100%;
 	display: flex;
-
 	justify-content: center;
 	margin-top: 20px;
 }
@@ -541,7 +530,6 @@ li {
 	align-items: center;
 	margin-top: 20px;
 	background-color: rgba(255, 255, 255, 0);
-
 	backdrop-filter: blur(8px);
 }
 .call-col1 {
@@ -549,12 +537,12 @@ li {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-
 	background-image: url(imgs/-5908894733596472842_121\ 2.png);
 	position: relative;
 	background-repeat: no-repeat;
 	height: 600px;
 }
+
 .call-col2 {
 	width: 100%;
 	display: flex;
@@ -1627,42 +1615,36 @@ input:hover {
 	flex-direction: column;
 	gap: 30px;
 }
-.nazarat-sherkatkonandegan-moshakhasat form select{
+.nazarat-sherkatkonandegan-moshakhasat form select {
 	border-radius: 5px;
 	height: 40px;
-	
 }
-.parent-nazaratform-moshakhasat h4{
+.parent-nazaratform-moshakhasat h4 {
 	margin-top: 10px;
 	padding: 20px;
-
 }
-.parent-nazaratform-moshakhasat{
+.parent-nazaratform-moshakhasat {
 	height: 700px;
 	border: solid;
 	margin-top: 50px;
-	
 }
-.nazarat-sherkatkonandegan-moshakhasat form select {
 
-}
-.title-nazarat-moshakhasat{
+.title-nazarat-moshakhasat {
 	text-align: center;
 }
-.parent-nazarat-moshakhasat{
+.parent-nazarat-moshakhasat {
 	margin-top: 60px;
 }
-.videopart-moshakhasat{
+.videopart-moshakhasat {
 	display: grid;
 	grid-template-rows: 100%;
-	grid-template-columns:50% 50%;
+	grid-template-columns: 50% 50%;
 	grid-gap: 10px;
 	margin-top: 20px;
 	width: 100%;
 	margin: 25px;
 }
-.videopart-moshakhasat img{
-	
+.videopart-moshakhasat img {
 	width: 70%;
 	box-shadow: 2px 2px 10px 2px #b4b2b2;
 	border-radius: 10px;
@@ -1678,11 +1660,11 @@ input:hover {
 	border-radius: 10px;
 	padding: 15px;
 	font-weight: bold;
-	margin:20px;
-	grid-area: 2 / 1 /span 2 /span 1;
+	margin: 20px;
+	grid-area: 2 / 1 / span 2 / span 1;
 	height: fit-content;
 }
-.leftbox-moshakhasatdore p{
+.leftbox-moshakhasatdore p {
 	padding-top: 20px;
 }
 .namedars-moshakhasat {
@@ -1711,18 +1693,18 @@ input:hover {
 	border: solid;
 	width: 30%;
 }
-.article-moshakhasat{
+.article-moshakhasat {
 	margin-top: 20px;
 }
-.title-article-moshakhasat{
-	padding:20px;
+.title-article-moshakhasat {
+	padding: 20px;
 }
-.price-moshakhasat-boxleft{
+.price-moshakhasat-boxleft {
 	display: grid;
 	grid-template-columns: 50% 50%;
 	gap: 30px;
 }
-.price-moshakhasat-boxleft-style{
+.price-moshakhasat-boxleft-style {
 	color: red;
 }
 
@@ -1738,7 +1720,7 @@ input:hover {
 	border: solid;
 	padding: 30px;
 }
-.parent-btn-moshakhasat-sabadekharid{
+.parent-btn-moshakhasat-sabadekharid {
 	display: flex;
 	justify-content: center;
 }
@@ -2506,16 +2488,14 @@ input:hover {
 	background-color: #e4e4e4a8;
 	width: 100%;
 	min-width: 60%;
+	margin-left: 20px;
 }
 .title-story-sec-three {
 	text-align: center;
 	margin: 5px 0px 5px 0px;
 }
-.parente-same-project-storypage {
-	border: 1px solid green;
-}
+
 .parente-same-project-storypage figure {
-	border: 1px solid black;
 	display: flex;
 	flex-direction: column;
 
@@ -2529,7 +2509,6 @@ input:hover {
 }
 .main-story-page {
 	display: flex;
-	border: 1px solid red;
 	width: 100vw;
 	height: 100vh;
 	overflow-x: scroll;
@@ -2539,7 +2518,6 @@ input:hover {
 .story-section {
 	min-width: 100vw;
 	height: 100vh;
-	border: 3px solid blue;
 }
 
 .story-sec-one {
@@ -2548,17 +2526,10 @@ input:hover {
 }
 
 .story-sec-one > div {
-	border: 1px solid green;
 	width: 100%;
-	/* display: flex; */
-}
-
-.story-sec-one > div > figure {
-	border: 1px solid purple;
 }
 
 .story-sec-one > div > figure > p {
-	border: 1px solid red;
 	text-align: center;
 	font-weight: bold;
 	color: #5e5e5e;
@@ -2574,11 +2545,9 @@ input:hover {
 
 .story-sec-one > div > nav {
 	height: 100%;
-	border: 3px solid rgb(125, 114, 187);
 }
 
 .story-sec-one > div > nav > ul {
-	border: 3px solid black;
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
@@ -2593,7 +2562,6 @@ input:hover {
 }
 
 .ul-title-story {
-	border: 1px solid red;
 	text-align: right;
 }
 
@@ -2609,14 +2577,12 @@ input:hover {
 
 /* section two start  */
 .story-sec-two {
-	border: 1px solid rgb(22, 195, 201);
 	display: flex;
 
 	flex-direction: column;
 }
 
 .all-figure-story-page {
-	border: 2px solid gray;
 	display: flex;
 	justify-content: center;
 }
@@ -2627,7 +2593,6 @@ input:hover {
 	justify-content: center;
 	flex-direction: column;
 	height: fit-content;
-	border: 1px solid rgb(134, 34, 138);
 	margin-top: 20px;
 	width: 37%;
 }
@@ -2723,14 +2688,27 @@ input:hover {
 
 /******************************** end succces page **********/
 
-
 /********************************************** RESPONSIVE SCOPE */
 /* mobile */
 @media screen and (max-width: 576px) {
 	.social-media-swiper {
 		display: none;
 	}
-
+	.b-32pageSc figure figcaption {
+		width: 105%;
+		height: 0%;
+		top: 24px;
+		right: -5px;
+	}
+	.b-32pageSc figure:hover figcaption {
+		height: 76%;
+	}
+	.b-32pageSc .b32-figcaption {
+		width: 88%;
+		height: 0%;
+		top: 24px;
+		right: 15px;
+	}
 	.sabd-kharid-section-box form {
 		display: flex;
 	}
@@ -2783,20 +2761,33 @@ input:hover {
 
 /* other */
 @media screen and (min-width: 577px) {
-	body {
-		background-color: green;
+	
+	.b-32pageSc figure figcaption {
+		width: 105%;
+		height: 0%;
+		top: 24px;
+		right: -5px;
 	}
-	.namedars-moshakhasat p{
-		padding-top: 10px ;
+	.b-32pageSc figure:hover figcaption {
+		height: 80%;
+	}
+	.b-32pageSc .b32-figcaption {
+		width: 88%;
+		height: 0%;
+		top: 24px;
+		right: 15px;
+	}
+
+	.namedars-moshakhasat p {
+		padding-top: 10px;
 	}
 	.img-parent-master-moshakhasat figure {
 		width: 20%;
 	}
-	.img-parent-master-moshakhasat figure{
+	.img-parent-master-moshakhasat figure {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		
 	}
 	.parente-same-project-storypage figure img {
 		width: 50%;
@@ -2871,32 +2862,29 @@ input:hover {
 
 /* tablet */
 @media screen and (min-width: 768px) {
-	body {
-		background-color: pink;
-	}
-	.leftbox-moshakhasatdore{
-		grid-area: 1 / 2/span 2 /span 1;
+
+	.leftbox-moshakhasatdore {
+		grid-area: 1 / 2 / span 2 / span 1;
 		position: sticky;
-	top: 50px;
+		top: 50px;
 	}
-	.img-parent-master-moshakhasat figure{
+	.img-parent-master-moshakhasat figure {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
 	.img-parent-master-moshakhasat figure {
 		width: 35%;
-
 	}
-	.btn-moshakhasat-sabadekharid{
+	.btn-moshakhasat-sabadekharid {
 		width: 100%;
 	}
-	 .parent-article-moshakhasat {
+	.parent-article-moshakhasat {
 		grid-template-columns: 60% 40%;
 		padding: 0px;
 		padding-right: 10px;
-	} 
-	
+	}
+
 	.story-section.story-sec-three {
 		min-width: 30%;
 	}
@@ -2908,12 +2896,7 @@ input:hover {
 		min-width: 6%;
 	}
 	.banner-sc-PageH.story-banner {
-		border: 1px solid red;
-		/* width: 42%; */
 		width: 100%;
-	}
-	.story-sec-two > .all-figure-story-page > figure {
-		border: 1px SOLID YELLOW;
 	}
 
 	.story-sec-two > .all-figure-story-page > figure > img {
@@ -2924,12 +2907,10 @@ input:hover {
 	}
 	.all-figure-story-page {
 		width: 100%;
-		border: 4px solid rgb(68, 67, 67);
 	}
 	.articel-story-page p {
 		text-align: center;
 		padding: 15px;
-		border: 3px solid purple;
 	}
 	.parent-article-story-page {
 		width: 100%;
@@ -2939,8 +2920,6 @@ input:hover {
 		flex-direction: column;
 
 		height: 100%;
-
-		border: 4px solid black;
 	}
 
 	.story-sec-one > div > nav {
@@ -3247,7 +3226,7 @@ input:hover {
 	}
 	.parent.panel {
 		margin-right: 100px;
-		border: solid blue;
+		
 		width: 100%;
 	}
 	.parent-virayesh-etelaat-panel {
@@ -3285,14 +3264,28 @@ input:hover {
 		margin-top: 200px;
 		width: 600px;
 	}
+
+	.b-32pageSc figure figcaption {
+		width: 105%;
+		height: 0%;
+		top: 24px;
+		right: -5px;
+	}
+	.b-32pageSc figure:hover figcaption {
+		height: 80%;
+	}
+	.b-32pageSc .b32-figcaption {
+		width: 88%;
+		height: 0%;
+		top: 24px;
+		right: 15px;
+	}
 }
 
 /* desktop */
 @media screen and (min-width: 900px) {
-	body {
-		background-color: gray;
-	}
-	.videopart-moshakhasat img{
+	
+	.videopart-moshakhasat img {
 		width: 60%;
 	}
 	.img-parent-master-moshakhasat figure {
@@ -3301,7 +3294,7 @@ input:hover {
 	.parent-article-moshakhasat {
 		grid-template-columns: 65% 35%;
 		gap: 10px;
-	} 
+	}
 	.headImg-errorpage {
 		width: 50%;
 		margin-top: 12%;
@@ -3371,15 +3364,12 @@ input:hover {
 
 /* laptop */
 @media screen and (min-width: 1024px) {
-	body {
-		background-color: skyblue;
-	}
-	.videopart-moshakhasat img{
+
+	.videopart-moshakhasat img {
 		width: 45%;
 	}
 	.img-parent-master-moshakhasat figure {
 		width: 25%;
-
 	}
 	.story-section.story-sec-three {
 		min-width: 30%;
@@ -3600,14 +3590,19 @@ input:hover {
 		border-radius: 5px;
 	}
 	.b-32pageSc figure:hover figcaption {
-		height: 85%;
+		height: 75%;
 	}
 	.b-32pageSc figure figcaption {
-		width: 100%;
+		width: 105%;
 		height: 0%;
-		top: 30px;
+		top: 25px;
 	}
-
+	.b-32pageSc .b32-figcaption {
+		width: 88%;
+		height: 0%;
+		top: 27px;
+		right: 15px;
+	}
 	.RowProject figure img {
 		width: 300px;
 		height: 184px;
