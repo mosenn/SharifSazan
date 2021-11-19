@@ -1625,7 +1625,6 @@ input:hover {
 }
 .parent-nazaratform-moshakhasat {
 	height: 700px;
-	border: solid;
 	margin-top: 50px;
 }
 
@@ -1656,7 +1655,6 @@ input:hover {
 	width: 100%;
 }
 .leftbox-moshakhasatdore {
-	border: solid;
 	border-radius: 10px;
 	padding: 15px;
 	font-weight: bold;
@@ -1717,7 +1715,6 @@ input:hover {
 }
 .parent-article-moshakhasat {
 	display: grid;
-	border: solid;
 	padding: 30px;
 }
 .parent-btn-moshakhasat-sabadekharid {
@@ -2761,7 +2758,6 @@ input:hover {
 
 /* other */
 @media screen and (min-width: 577px) {
-	
 	.b-32pageSc figure figcaption {
 		width: 105%;
 		height: 0%;
@@ -2862,7 +2858,6 @@ input:hover {
 
 /* tablet */
 @media screen and (min-width: 768px) {
-
 	.leftbox-moshakhasatdore {
 		grid-area: 1 / 2 / span 2 / span 1;
 		position: sticky;
@@ -3226,7 +3221,7 @@ input:hover {
 	}
 	.parent.panel {
 		margin-right: 100px;
-		
+
 		width: 100%;
 	}
 	.parent-virayesh-etelaat-panel {
@@ -3284,7 +3279,6 @@ input:hover {
 
 /* desktop */
 @media screen and (min-width: 900px) {
-	
 	.videopart-moshakhasat img {
 		width: 60%;
 	}
@@ -3364,7 +3358,6 @@ input:hover {
 
 /* laptop */
 @media screen and (min-width: 1024px) {
-
 	.videopart-moshakhasat img {
 		width: 45%;
 	}
