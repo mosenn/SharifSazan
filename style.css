@@ -1255,7 +1255,7 @@ arent-virayaesh-panel form p {
 	font-size: 18px;
 }
 
-/*********************************end news page */
+/********************************* end news page */
 
 /************************************************ START FOOTER  */
 
@@ -1607,6 +1607,58 @@ input:hover {
 }
 .right-side {
 	height: 100vh;
+}
+
+.moshakhasat-header-photo-parent {
+	width: 100%;
+}
+.moshakhasat-header-photo-parent figure img {
+	width: 100%;
+}
+.leftbox-moshakhasatdore {
+	border: solid;
+	border-radius: 10px;
+	padding: 20px;
+	font-weight: bold;
+}
+.namedars-moshakhasat {
+	padding: 10px;
+	display: flex;
+	gap: 20px;
+	flex-direction: column;
+}
+.btn-moshakhasat-sabadekharid {
+	border: solid;
+	background-color: var(--bg-btn);
+	margin-top: 10px;
+	width: 50%;
+	border-radius: 5px;
+	height: 40px;
+}
+.btn-moshakhasat-sabadekharid a {
+	color: white;
+}
+.img-parent-master-moshakhasat {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	margin-top: 10px;
+	border: solid;
+}
+.img-parent-master-moshakhasat figure {
+	border: solid;
+	width: 30%;
+}
+.img-parent-master-moshakhasat figure img {
+	width: 100%;
+	border-radius: 100px;
+	border: solid;
+}
+.parent-article-moshakhasat {
+	display: grid;
+	gap: 40px;
+	border: solid;
+	padding: 30px;
 }
 
 /* END ALL PAGE FROM STYLE HERE  */
